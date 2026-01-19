@@ -1,0 +1,1 @@
+SELECT ProductID, Discontinued FROM dbo.Products WHERE Discontinued='1';
