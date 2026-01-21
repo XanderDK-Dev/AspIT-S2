@@ -1,0 +1,1 @@
+SELECT SupplierID, Country, HomePage FROM dbo.Suppliers WHERE HomePage IS NULL;

@@ -1,0 +1,1 @@
+SELECT COUNT(ProductID) FROM dbo.Products;
