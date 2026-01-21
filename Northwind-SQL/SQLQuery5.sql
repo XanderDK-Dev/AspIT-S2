@@ -1,1 +1,0 @@
-SELECT SupplierID, Region FROM dbo.Suppliers WHERE Region='Québec';

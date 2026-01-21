@@ -1,1 +1,0 @@
-SELECT SupplierID, Country FROM dbo.Suppliers WHERE Country = 'Germany' OR Country = 'France';
