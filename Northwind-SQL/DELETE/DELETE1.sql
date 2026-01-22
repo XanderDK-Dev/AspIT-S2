@@ -1,0 +1,1 @@
+DELETE FROM dbo.[Order Details] WHERE ProductID = 13;

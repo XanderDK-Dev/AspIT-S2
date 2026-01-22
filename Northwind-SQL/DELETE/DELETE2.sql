@@ -1,0 +1,1 @@
+DELETE FROM dbo.[Order Details] WHERE OrderID = 10275;
