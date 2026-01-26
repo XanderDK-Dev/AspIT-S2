@@ -1,0 +1,1 @@
+SELECT Email FROM UniDB.dbo.ContactInformations;

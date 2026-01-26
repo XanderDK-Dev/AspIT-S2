@@ -1,0 +1,1 @@
+SELECT Firstname, Lastname FROM UniDB.dbo.Persons;
