@@ -1,0 +1,4 @@
+SELECT TOP 1 COUNT(AddressID), AddressID
+FROM Persons
+GROUP BY AddressID
+ORDER BY COUNT(AddressID) DESC;
