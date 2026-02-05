@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities
 {
-    internal class ContactInformations
+    public class ContactInformations
     {
         public int ContactInformationID { get; set; }
         public string PhoneNumber { get; set; }
