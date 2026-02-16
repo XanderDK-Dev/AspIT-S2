@@ -7,9 +7,10 @@ namespace Test
 
         static void SqlDatabase()
         {
-            var persons = DataHandler.GetAllPersons();
+            DataHandler handler = new DataHandler();
+            var persons = handler.GetAllPersons();
             
-            persons = DataHandler.GetAllPersons();
+            persons = handler.GetAllPersons();
 
             foreach (var person in persons)
             {
@@ -33,7 +34,8 @@ namespace Test
                     FirstName = firstname,
                     LastName = lastname
                 };
-                DataHandler.AddNewPerson(newPerson);
+                DataHandler handler = new DataHandler();
+                handler.AddNewPerson(newPerson);
                 SqlDatabase();
             }
             else if (character.ToLower() == "b")
@@ -51,7 +53,8 @@ namespace Test
                     FirstName = firstname,
                     LastName = lastname
                 };
-                DataHandler.UpdatePerson(updatedPerson);
+                DataHandler handler = new DataHandler();
+                handler.UpdatePerson(updatedPerson);
                 SqlDatabase();
             }
             else if (character.ToLower() == "c")
@@ -66,7 +69,8 @@ namespace Test
                     {
                         PersonID = personid
                     };
-                    DataHandler.DeletePerson(deletedPerson);
+                    DataHandler handler = new DataHandler();
+                    handler.DeletePerson(deletedPerson);
                     SqlDatabase();
                 }
             }

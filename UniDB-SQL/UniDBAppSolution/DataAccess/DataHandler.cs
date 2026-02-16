@@ -5,8 +5,8 @@ namespace DataAccess
 {
     public class DataHandler
     {
-        static string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=UniDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30";
-        public static List<Person> GetAllPersons()
+        string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=UniDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30";
+        public List<Person> GetAllPersons()
         {
             List<Person> items = new();
 
@@ -38,7 +38,7 @@ namespace DataAccess
         }
     
 
-        public static void AddNewPerson(Person person)
+        public void AddNewPerson(Person person)
         {
             string sql = $"INSERT INTO Persons (firstName, lastName) VALUES ('{person.FirstName}', '{person.LastName}');";
             SqlConnection connection = new(connectionString);
@@ -48,7 +48,7 @@ namespace DataAccess
             connection.Close();
         }
 
-        public static void UpdatePerson(Person person)
+        public void UpdatePerson(Person person)
         {
             string sql = $"UPDATE Persons SET Firstname = '{person.FirstName}', Lastname = '{person.LastName}' WHERE PersonID = {person.PersonID};";
             SqlConnection connection = new(connectionString);
@@ -58,7 +58,7 @@ namespace DataAccess
             connection.Close();
         }
 
-        public static void DeletePerson(Person person)
+        public void DeletePerson(Person person)
         {
             string sql = $"DELETE FROM Persons WHERE PersonID = {person.PersonID};";
             SqlConnection connection = new(connectionString);
