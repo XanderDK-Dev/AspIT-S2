@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8AD2D-F6CC-99C0-B6AF-489676982DA4}|DataAccess\\DataAccess.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\aspit-s2\\unidb-sql\\northwindapidemo\\dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E8AD2D-F6CC-99C0-B6AF-489676982DA4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\aspit-s2\\unidb-sql\\northwindapidemo\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|solutionrelative:entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|Api\\Api.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\aspit-s2\\unidb-sql\\northwindapidemo\\api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFA08EA-AECE-205F-7B85-326FD0B81BAD}|Api\\Api.csproj|solutionrelative:api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Api\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Api\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Api\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T10:06:07.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\Repository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\Repository.cs",
+              "RelativeToolTip": "DataAccess\\Repository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T09:37:07.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Employee.cs",
+              "RelativeToolTip": "Entities\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T09:36:22.72Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
