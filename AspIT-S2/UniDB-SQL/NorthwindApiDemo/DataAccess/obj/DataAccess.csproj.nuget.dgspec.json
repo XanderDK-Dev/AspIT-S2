@@ -57,6 +57,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.1.4, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.12.41, )"
             }
           },
           "imports": [

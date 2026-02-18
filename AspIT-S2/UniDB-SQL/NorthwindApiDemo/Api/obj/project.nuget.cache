@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "C3HNFRN0+wI=",
+  "dgSpecHash": "yqDxmUVJpdM=",
   "success": true,
   "projectFilePath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Api\\Api.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.7.1\\microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\scalar.aspnetcore\\2.12.41\\scalar.aspnetcore.2.12.41.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.clientmodel\\1.8.0\\system.clientmodel.1.8.0.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.11\\system.configuration.configurationmanager.9.0.11.nupkg.sha512",
     "C:\\Users\\alexa\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.7.1\\system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",

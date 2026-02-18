@@ -398,6 +398,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.12.41": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.ClientModel/1.8.0": {
         "type": "package",
         "dependencies": {
@@ -1126,6 +1142,25 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.12.41": {
+      "sha512": "uO90maY4ayqLHq+LFPKgRxPBlI8GPYOLLv5VkPvenG75p7pQ8lUb3jpQWxe02GeKgivyxlxJ1tNsIlCpHg1S6w==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.12.41",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.12.41.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "System.ClientModel/1.8.0": {
       "sha512": "AqRzhn0v29GGGLj/Z6gKq4lGNtvPHT4nHdG5PDJh9IfVjv/nYUVmX11hwwws1vDFeIAzrvmn0dPu8IjLtu6fAw==",
       "type": "package",
@@ -1338,7 +1373,8 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Entities >= 1.0.0",
-      "Microsoft.Data.SqlClient >= 6.1.4"
+      "Microsoft.Data.SqlClient >= 6.1.4",
+      "Scalar.AspNetCore >= 2.12.41"
     ]
   },
   "packageFolders": {
@@ -1398,6 +1434,10 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[6.1.4, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.12.41, )"
           }
         },
         "imports": [

@@ -257,6 +257,14 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.12.41": {
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "2.12.41.0",
+            "fileVersion": "2.12.41.0"
+          }
+        }
+      },
       "System.ClientModel/1.8.0": {
         "dependencies": {
           "System.Memory.Data": "8.0.1"
@@ -310,7 +318,8 @@
       "DataAccess/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
-          "Microsoft.Data.SqlClient": "6.1.4"
+          "Microsoft.Data.SqlClient": "6.1.4",
+          "Scalar.AspNetCore": "2.12.41"
         },
         "runtime": {
           "DataAccess.dll": {
@@ -446,6 +455,13 @@
       "sha512": "sha512-N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
       "path": "microsoft.sqlserver.server/1.0.0",
       "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/2.12.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uO90maY4ayqLHq+LFPKgRxPBlI8GPYOLLv5VkPvenG75p7pQ8lUb3jpQWxe02GeKgivyxlxJ1tNsIlCpHg1S6w==",
+      "path": "scalar.aspnetcore/2.12.41",
+      "hashPath": "scalar.aspnetcore.2.12.41.nupkg.sha512"
     },
     "System.ClientModel/1.8.0": {
       "type": "package",

@@ -319,6 +319,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.12.41": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.ClientModel/1.8.0": {
         "type": "package",
         "dependencies": {
@@ -430,7 +446,8 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Entities": "1.0.0",
-          "Microsoft.Data.SqlClient": "6.1.4"
+          "Microsoft.Data.SqlClient": "6.1.4",
+          "Scalar.AspNetCore": "2.12.41"
         },
         "compile": {
           "bin/placeholder/DataAccess.dll": {}
@@ -837,6 +854,25 @@
         "lib/netstandard2.0/Microsoft.SqlServer.Server.xml",
         "microsoft.sqlserver.server.1.0.0.nupkg.sha512",
         "microsoft.sqlserver.server.nuspec"
+      ]
+    },
+    "Scalar.AspNetCore/2.12.41": {
+      "sha512": "uO90maY4ayqLHq+LFPKgRxPBlI8GPYOLLv5VkPvenG75p7pQ8lUb3jpQWxe02GeKgivyxlxJ1tNsIlCpHg1S6w==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.12.41",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.12.41.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
       ]
     },
     "System.ClientModel/1.8.0": {
