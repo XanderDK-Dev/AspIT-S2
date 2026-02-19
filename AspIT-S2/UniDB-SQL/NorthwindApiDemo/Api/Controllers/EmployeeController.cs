@@ -16,7 +16,7 @@ namespace Api.Controllers
             List<Employee> employees = repository.GetAllEmployees();
             return Ok(employees);
         }
-        [HttpGet("{id}")]
+        [HttpGet("id/{id}")]
 
         public ActionResult<Employee>GetEmployeeById(int id)
         {
@@ -31,6 +31,14 @@ namespace Api.Controllers
             Repository repository = new();
             List<Employee> e = repository.FindEmployeeWith(startdate, enddate);
             return Ok(e);
+        }
+
+        [HttpGet("city/{city}")]
+        public ActionResult<List<Employee>> GetEmployeeByCity(string city)
+        {
+            Repository repository = new();
+            List<Employee> employees = repository.GetEmployeeBy(city);
+            return Ok(employees);
         }
 
         [HttpPost]

@@ -97,6 +97,35 @@ namespace DataAccess
             return employees;
         }
 
+        public List<Employee> GetEmployeeBy(string city)
+        {
+            List<Employee> employees = new();
+            SqlConnection connection = new(connectionString);
+            string sql = $"SELECT EmployeeID, FirstName, LastName, City FROM Employees WHERE City = '{city}';";
+            SqlCommand command = new SqlCommand(sql, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = (int)reader["EmployeeID"];
+                string firstname = (string)reader["FirstName"];
+                string lastname = (string)reader["LastName"];
+                string employeecity = (string)reader["City"];
+
+                Employee employee = new()
+                {
+                    Id = id,
+                    Firstname = firstname,
+                    Lastname = lastname,
+                    City = employeecity,
+                };
+
+                employees.Add(employee);
+            }
+
+            return employees;
+        }
+
         public void Insert(Employee employee)
         {
             SqlConnection connection = new(connectionString);
