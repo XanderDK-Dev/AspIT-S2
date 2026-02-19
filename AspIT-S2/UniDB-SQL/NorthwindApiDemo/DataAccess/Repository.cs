@@ -97,6 +97,37 @@ namespace DataAccess
             return employees;
         }
 
+        public List<Employee> GetByTitle(string title)
+        {
+            List<Employee> employees = new();
+            SqlConnection connection = new(connectionString);
+            string sql = $"SELECT EmployeeID, FirstName, LastName, Title, City FROM Employees WHERE Title LIKE '%{title}%';";
+            SqlCommand command = new SqlCommand(sql, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = (int)reader["EmployeeID"];
+                string firstname = (string)reader["FirstName"];
+                string lastname = (string)reader["LastName"];
+                string employeetitle = (string)reader["Title"];
+                string city = (string)reader["City"];
+
+                Employee employee = new()
+                {
+                    Id = id,
+                    Firstname = firstname,
+                    Lastname = lastname,
+                    Title = employeetitle,
+                    City = city,
+                };
+
+                employees.Add(employee);
+            }
+
+            return employees;
+        }
+
         public List<Employee> GetEmployeeBy(string city)
         {
             List<Employee> employees = new();

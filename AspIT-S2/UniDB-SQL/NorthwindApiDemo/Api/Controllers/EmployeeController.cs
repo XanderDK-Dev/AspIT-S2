@@ -41,6 +41,14 @@ namespace Api.Controllers
             return Ok(employees);
         }
 
+        [HttpGet("title/{title}")]
+        public ActionResult<List<Employee>> GetEmployeeByTitle(string title)
+        {
+            Repository repository = new();
+            List<Employee> employees = repository.GetByTitle(title);
+            return Ok(employees);
+        }
+
         [HttpPost]
         public void AddNewEmployee(Employee employee)
         {
