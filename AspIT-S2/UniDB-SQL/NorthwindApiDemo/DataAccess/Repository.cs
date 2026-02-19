@@ -7,7 +7,6 @@ namespace DataAccess
     public class Repository
     {
         private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30";
-
         public void DeleteEmployee(int id)
         {
             SqlConnection connection = new(connectionString);
@@ -21,14 +20,23 @@ namespace DataAccess
         public Employee FindEmployeeBy(int id)
         {
             SqlConnection connection = new(connectionString);
-            string sql = $"SELECT EmployeeID, FirstName, LastName FROM Employees WHERE EmployeeID = '{id}';";
+            string sql = $"SELECT EmployeeID, FirstName, LastName FROM Employees WHERE EmployeeID = {id};";
             SqlCommand command = new SqlCommand(sql, connection);
             connection.Open();
-            Employee employee = new();
             SqlDataReader reader = command.ExecuteReader();
-            Employee ID = id;
-            Employee firstname = (Employee)reader["FirstName"];
-            Employee lastname = (Employee)reader["LastName"];
+            Employee employee = new();
+            while (reader.Read())
+            {
+                int employeeid = (int)reader["EmployeeID"];
+                string firstname = (string)reader["FirstName"];
+                string lastname = (string)reader["LastName"];
+                employee = new()
+                {
+                    Id = employeeid,
+                    Firstname = firstname,
+                    Lastname = lastname,
+                };
+            }
             return employee;
         }
 
