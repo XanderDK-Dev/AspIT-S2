@@ -40,6 +40,36 @@ namespace DataAccess
             return employee;
         }
 
+        public List<Employee> FindEmployeeWith(DateTime startdate, DateTime enddate)
+        {
+            string sqlFormattedStartDate = startdate.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            string sqlFormattedEndDate = enddate.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            List<Employee> employees = new();
+            SqlConnection connection = new(connectionString);
+            string sql = $"SELECT EmployeeID, FirstName, LastName, HireDate FROM Employees WHERE HireDate >= '{sqlFormattedStartDate}' AND HireDate <= '{sqlFormattedEndDate}';";
+            SqlCommand command = new SqlCommand(sql, connection);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                int employeeid = (int)reader["EmployeeID"];
+                string firstname = (string)reader["FirstName"];
+                string lastname = (string)reader["LastName"];
+                DateTime hiredate = (DateTime)reader["HireDate"];
+
+                Employee employee = new()
+                {
+                    Id = employeeid,
+                    Firstname = firstname,
+                    Lastname = lastname,
+                    HireDate = hiredate
+                };
+
+                employees.Add(employee);
+            }
+            return employees;
+        }
+
         public List<Employee> GetAllEmployees() 
         {
             List<Employee> employees = new();

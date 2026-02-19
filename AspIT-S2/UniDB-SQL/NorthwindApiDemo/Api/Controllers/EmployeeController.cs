@@ -25,6 +25,14 @@ namespace Api.Controllers
             return Ok(e);
         }
 
+        [HttpGet("{startdate}, {enddate}")]
+        public ActionResult<List<Employee>>GetEmployeesByHireDate(DateTime startdate, DateTime enddate)
+        {
+            Repository repository = new();
+            List<Employee> e = repository.FindEmployeeWith(startdate, enddate);
+            return Ok(e);
+        }
+
         [HttpPost]
         public void AddNewEmployee(Employee employee)
         {
