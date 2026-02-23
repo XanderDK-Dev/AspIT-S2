@@ -39,7 +39,7 @@ namespace DataAccess
             }
             return employee;
         }
-
+        // TODO: Relearn OOP
         public List<Employee> FindEmployeeWith(DateTime startdate, DateTime enddate)
         {
             string sqlFormattedStartDate = startdate.ToString("yyyy-MM-dd HH:mm:ss.fff");
