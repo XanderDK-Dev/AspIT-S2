@@ -23,7 +23,7 @@
                     </Grid.RowDefinitions>
                     <Border Grid.Row="0" Margin="0,0,0,155" Padding="8,3,0,6" Height="25"
                         Background="{ThemeResource SubtleFillColorSecondaryBrush}">
-                        <TextBlock Text="Name"
+                        <TextBlock Text="{x:Bind NoteName}"
                         Style="{StaticResource CaptionTextBlockStyle}"
                         Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                     </Border>

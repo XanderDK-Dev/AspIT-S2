@@ -40,10 +40,14 @@ namespace WinUINotes.Models
                 else if (item.IsOfType(StorageItemTypes.File))
                 {
                     StorageFile file = (StorageFile)item;
+                    string content = await FileIO.ReadTextAsync(file);
+                    string[] parts = content.Split("|~|", 2); // Split into max 2 parts
+
                     Note note = new Note()
                     {
                         Filename = file.Name,
-                        Text = await FileIO.ReadTextAsync(file),
+                        NoteName = parts.Length > 0 ? parts[0] : string.Empty,
+                        Text = parts.Length > 1 ? parts[1] : string.Empty,
                         Date = file.DateCreated.DateTime
                     };
                     Notes.Add(note);

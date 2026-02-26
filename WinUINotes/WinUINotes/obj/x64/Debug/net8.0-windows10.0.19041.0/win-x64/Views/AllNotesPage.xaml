@@ -21,13 +21,13 @@
                         <RowDefinition Height="180"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Border Grid.Row="0" Padding="8,3,0,6" Height="25"
+                    <Border Grid.Row="0" Margin="0,0,0,155" Padding="8,3,0,6" Height="25"
                         Background="{ThemeResource SubtleFillColorSecondaryBrush}">
-                        <TextBlock Text="Name"
+                        <TextBlock x:ConnectionId='6'                         
                         Style="{StaticResource CaptionTextBlockStyle}"
                         Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
                     </Border>
-                    <TextBlock x:ConnectionId='4'                      Margin="12, 25, 12, 0"
+                    <TextBlock x:ConnectionId='4'                      Margin="12, 30, 12, 0"
                            TextWrapping="Wrap"
                            TextTrimming="WordEllipsis"/>
                     <Border Grid.Row="1" Padding="8,6,0,6"
@@ -48,14 +48,14 @@
         </Grid.RowDefinitions>
 
         <CommandBar DefaultLabelPosition="Right">
-            <AppBarButton x:ConnectionId='7' Icon="Add" Label="New note"                            />
+            <AppBarButton x:ConnectionId='8' Icon="Add" Label="New note"                            />
             <CommandBar.Content>
                 <TextBlock Text="Quick notes" Margin="16,8" 
                    Style="{ThemeResource SubtitleTextBlockStyle}"/>
             </CommandBar.Content>
         </CommandBar>
 
-        <ItemsView x:ConnectionId='6'                                         
+        <ItemsView x:ConnectionId='7'                                         
            Grid.Row="1" Margin="24"
            ItemTemplate="{StaticResource NoteItemTemplate}"
            SelectionMode="None"

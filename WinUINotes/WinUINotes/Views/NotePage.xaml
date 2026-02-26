@@ -10,8 +10,9 @@
 
     <Grid Padding="16" RowSpacing="8">
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,22 +20,45 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <!--<TextBox x:Name="NoteNaming"
+         Header="{x:Bind noteModel.NoteName, Mode=TwoWay}"
+         Width="400"
+         Height="100"
+         Grid.Column="1"
+         Grid.Row="0"/>-->
+
+
+
+        <!--<Border Grid.Row="0" Grid.Column="1" Padding="8,3,0,0" Height="25"
+            Background="{ThemeResource SubtleFillColorSecondaryBrush}">
+            <TextBlock Text="{x:Bind noteModel.NoteName, Mode=TwoWay}"
+                Style="{StaticResource CaptionTextBlockStyle}"/>
+        </Border>-->
+
+        <TextBox x:Name="NameEditor"
+         Grid.Row="0" Grid.Column="1" Padding="8,3,0,0"
+         Text="{x:Bind noteModel.NoteName, Mode=TwoWay}"
+         AcceptsReturn="True"
+         PlaceholderText="Enter a name"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         Width="400"/>
+
         <TextBox x:Name="NoteEditor"
          Text="{x:Bind noteModel.Text, Mode=TwoWay}"
          AcceptsReturn="True"
          TextWrapping="Wrap"
          PlaceholderText="Enter your note"
-         Header="{x:Bind noteModel.Date.ToString()}"
          ScrollViewer.VerticalScrollBarVisibility="Auto"
          Width="400"
+         Grid.Row="1"
          Grid.Column="1"/>
-
 
         <StackPanel Orientation="Horizontal"
             HorizontalAlignment="Right"
             Spacing="4"
-            Grid.Row="1" Grid.Column="1">
-            <Button Content="Save" Click="SaveButton_Click" Style="{StaticResource AccentButtonStyle}"/>
+            Grid.Row="2" Grid.Column="1">
+            <TextBlock Text="{x:Bind noteModel.Date.ToString()}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" Padding="0,3,150,0"/>
+            <Button Content="Save" Click="SaveButton_Click" Style="{ThemeResource AccentButtonStyle}"/>
             <Button Content="Delete" Click="DeleteButton_Click"/>
         </StackPanel>
     </Grid>

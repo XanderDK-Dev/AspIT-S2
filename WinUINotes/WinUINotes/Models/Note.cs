@@ -12,6 +12,7 @@ namespace WinUINotes.Models
         private StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
         public string Filename { get; set; } = string.Empty;
         public string Text { get; set; } = string.Empty;
+        public string NoteName { get; set; } = string.Empty;
         public DateTime Date { get; set; } = DateTime.Now;
 
         public Note()
@@ -21,13 +22,13 @@ namespace WinUINotes.Models
 
         public async Task SaveAsync()
         {
-            // Save the note to a file.
             StorageFile noteFile = (StorageFile)await storageFolder.TryGetItemAsync(Filename);
             if (noteFile is null)
             {
                 noteFile = await storageFolder.CreateFileAsync(Filename, CreationCollisionOption.ReplaceExisting);
             }
-            await FileIO.WriteTextAsync(noteFile, Text);
+            // Save title and content in one write, separated by |~|
+            await FileIO.WriteTextAsync(noteFile, NoteName + "|~|" + Text);
         }
 
         public async Task DeleteAsync()

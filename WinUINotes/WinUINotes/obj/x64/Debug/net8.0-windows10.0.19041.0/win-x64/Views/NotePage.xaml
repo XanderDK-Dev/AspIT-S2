@@ -10,8 +10,9 @@
 
     <Grid Padding="16" RowSpacing="8">
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,23 +20,46 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBox x:ConnectionId='2' x:Name="NoteEditor"
+        <!--<TextBox x:Name="NoteNaming"
+         Header="{x:Bind noteModel.NoteName, Mode=TwoWay}"
+         Width="400"
+         Height="100"
+         Grid.Column="1"
+         Grid.Row="0"/>-->
+
+
+
+        <!--<Border Grid.Row="0" Grid.Column="1" Padding="8,3,0,0" Height="25"
+            Background="{ThemeResource SubtleFillColorSecondaryBrush}">
+            <TextBlock Text="{x:Bind noteModel.NoteName, Mode=TwoWay}"
+                Style="{StaticResource CaptionTextBlockStyle}"/>
+        </Border>-->
+
+        <TextBox x:ConnectionId='2' x:Name="NameEditor"
+         Grid.Row="0" Grid.Column="1" Padding="8,3,0,0"
+                                                        
+         AcceptsReturn="True"
+         PlaceholderText="Enter a name"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         Width="400"/>
+
+        <TextBox x:ConnectionId='3' x:Name="NoteEditor"
                                                     
          AcceptsReturn="True"
          TextWrapping="Wrap"
          PlaceholderText="Enter your note"
-                                                    
          ScrollViewer.VerticalScrollBarVisibility="Auto"
          Width="400"
+         Grid.Row="1"
          Grid.Column="1"/>
-
 
         <StackPanel Orientation="Horizontal"
             HorizontalAlignment="Right"
             Spacing="4"
-            Grid.Row="1" Grid.Column="1">
-            <Button x:ConnectionId='3' Content="Save"                          Style="{StaticResource AccentButtonStyle}"/>
-            <Button x:ConnectionId='4' Content="Delete"                           />
+            Grid.Row="2" Grid.Column="1">
+            <TextBlock x:ConnectionId='4'                                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" Padding="0,3,150,0"/>
+            <Button x:ConnectionId='5' Content="Save"                          Style="{ThemeResource AccentButtonStyle}"/>
+            <Button x:ConnectionId='6' Content="Delete"                           />
         </StackPanel>
     </Grid>
 </Page>
