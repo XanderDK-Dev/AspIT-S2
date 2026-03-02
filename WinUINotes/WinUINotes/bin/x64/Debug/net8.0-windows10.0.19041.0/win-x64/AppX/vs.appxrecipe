@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\70835\OneDrive - Campus Vejle\Dokumenter\AspIT-S2\WinUINotes\WinUINotes\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-02-26T11:30:48.833</Modified>
+      <Modified>2026-03-02T07:52:15.077</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -39,11 +39,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\70835\OneDrive - Campus Vejle\Dokumenter\AspIT-S2\WinUINotes\WinUINotes\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>WinUINotes.exe</PackagePath>
-      <Modified>2026-02-26T11:30:48.024</Modified>
+      <Modified>2026-03-02T07:52:13.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\70835\OneDrive - Campus Vejle\Dokumenter\AspIT-S2\WinUINotes\WinUINotes\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WinUINotes.dll">
       <PackagePath>WinUINotes.dll</PackagePath>
-      <Modified>2026-02-26T11:30:47.996</Modified>
+      <Modified>2026-03-02T07:52:13.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\70835\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.24\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -927,7 +927,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\70835\OneDrive - Campus Vejle\Dokumenter\AspIT-S2\WinUINotes\WinUINotes\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WinUINotes.deps.json">
       <PackagePath>WinUINotes.deps.json</PackagePath>
-      <Modified>2026-02-26T08:22:30.519</Modified>
+      <Modified>2026-03-02T07:52:14.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\70835\OneDrive - Campus Vejle\Dokumenter\AspIT-S2\WinUINotes\WinUINotes\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -963,7 +963,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\70835\OneDrive - Campus Vejle\Dokumenter\AspIT-S2\WinUINotes\WinUINotes\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-02-26T10:00:18.931</Modified>
+      <Modified>2026-03-02T07:52:14.495</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
