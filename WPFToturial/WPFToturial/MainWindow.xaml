@@ -4,21 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFToturial"
-        xmlns:userControls="clr-namespace:WPFToturial.View.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="300">
+        Title="MainWindow" Height="250" Width="300">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <userControls:ClearableTextBox Grid.Row="1" Width="250" Height="40" Placeholder="First Name"/>
-        <userControls:ClearableTextBox Grid.Row="2" Width="250" Height="40" Placeholder="Last Name"/>
-        <userControls:ClearableTextBox Grid.Row="3" Width="250" Height="40" Placeholder="Email"/>
-        <userControls:ClearableTextBox Grid.Row="4" Width="250" Height="40" Placeholder="Phone"/>
+        <Button Name="btnFire" Content="Fire" Width="100" Height="40"
+                Click="btnFire_Click"/>
+        <TextBlock Grid.Row="1" Name="tbInfo" FontSize="16"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

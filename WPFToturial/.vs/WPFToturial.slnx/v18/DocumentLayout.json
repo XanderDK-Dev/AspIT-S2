@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\WPFToturial\\",
+  "WorkspaceRootPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\WPFToturial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5F2F3F5-0A1E-0A1F-09EC-FA578974B764}|WPFToturial\\WPFToturial.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\wpftoturial\\wpftoturial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5F2F3F5-0A1E-0A1F-09EC-FA578974B764}|WPFToturial\\WPFToturial.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\wpftoturial\\wpftoturial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5F2F3F5-0A1E-0A1F-09EC-FA578974B764}|WPFToturial\\WPFToturial.csproj|solutionrelative:wpftoturial\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F2F3F5-0A1E-0A1F-09EC-FA578974B764}|WPFToturial\\WPFToturial.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\wpftoturial\\wpftoturial\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A5F2F3F5-0A1E-0A1F-09EC-FA578974B764}|WPFToturial\\WPFToturial.csproj|solutionrelative:wpftoturial\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,13 +22,25 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\WPFToturial\\WPFToturial\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPFToturial\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\WPFToturial\\WPFToturial\\MainWindow.xaml",
+              "RelativeToolTip": "WPFToturial\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-04T08:08:19.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\WPFToturial\\WPFToturial\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\WPFToturial\\WPFToturial\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPFToturial\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\WPFToturial\\WPFToturial\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\WPFToturial\\WPFToturial\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPFToturial\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-03T09:14:00.417Z",
               "EditorCaption": ""
