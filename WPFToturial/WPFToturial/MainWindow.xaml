@@ -5,15 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFToturial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="300">
+        Title="MainWindow" Height="400" Width="400">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition Height="75"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Name="btnFire" Content="Fire" Width="100" Height="40"
-                Click="btnFire_Click"/>
-        <TextBlock Grid.Row="1" Name="tbInfo" FontSize="16"
-                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Name="txtEntry" Height="35" FontSize="16"/>
+        <Button Grid.Column="1" Name="btnAdd" Width="50" Content="Add" Click="btnAdd_Click" HorizontalAlignment="Left"/>
+        <Button Grid.Column="1" Name="btnDelete" Width="50" Content="Del" Click="btnDelete_Click"  HorizontalAlignment="Left" Margin="60,0,0,0"/>
+        <Button Grid.Column="1" Name="btnClear" Width="50" Content="Clr" Click="btnClear_Click" HorizontalAlignment="Left" Margin="120,0,0,0"/>
+
+        <ListView Name="lvEntries" Grid.Row="1" Grid.ColumnSpan="2" SelectionMode="Single" />
     </Grid>
 </Window>

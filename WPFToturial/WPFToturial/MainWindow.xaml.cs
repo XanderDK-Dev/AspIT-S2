@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Microsoft.Win32;
+using System.Windows;
 
 namespace WPFToturial
 {
@@ -7,23 +8,27 @@ namespace WPFToturial
         public MainWindow()
         {
             InitializeComponent();
+            lvEntries.Items.Add("a");
+            lvEntries.Items.Add("a1");
+            lvEntries.Items.Add("a2");
+            lvEntries.Items.Add("a3");
         }
 
-        private void btnFire_Click(object sender, RoutedEventArgs e)
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("Could not open file.", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error);
+            lvEntries.Items.Add(txtEntry.Text);
+            txtEntry.Clear();
+        }
 
-            MessageBoxResult result = MessageBox.Show("Do you agree?", "Agreement", 
-                MessageBoxButton.YesNo, MessageBoxImage.Question);
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            int index = lvEntries.SelectedIndex;
+            lvEntries.Items.RemoveAt(index);
+        }
 
-            if(result == MessageBoxResult.Yes)
-            {
-                tbInfo.Text = "Agreed";
-            }
-            else
-            {
-                tbInfo.Text = "Not Agreed";
-            }
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            lvEntries.Items.Clear();
         }
     }
 }
