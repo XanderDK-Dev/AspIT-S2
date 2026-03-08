@@ -9,7 +9,7 @@
     <Grid Background="Transparent">
         <Border Background="#525252" CornerRadius="8">
             <ListView Background="#525252" Foreground="#dbdbdb" Name="lvEmployees" 
-                      SelectionMode="Single" Margin="5" BorderBrush="#525252"/>
+                      SelectionMode="Single" Margin="5" BorderBrush="#525252" SelectionChanged="lvEmployees_SelectionChanged"/>
         </Border>
     </Grid>
 </UserControl>

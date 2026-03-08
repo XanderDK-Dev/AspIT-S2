@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="DataAccess/DataAccess.csproj" Id="61861995-cfc9-44ba-bb58-2fd05e3059b4" />
+  <Project Path="Entities/Entities.csproj" Id="2c48baa2-78e6-49e2-b7bf-a3d8652d2b10" />
   <Project Path="NorthwindUI/NorthwindUI.csproj" />
 </Solution>

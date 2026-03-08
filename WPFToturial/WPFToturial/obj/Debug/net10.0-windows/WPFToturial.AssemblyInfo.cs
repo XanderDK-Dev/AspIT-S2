@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPFToturial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec597bf5ac748813b5bdf0a17abdb3b8102f59c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+681c2c324531968d0d323f8fc959f54bd0d1ff24")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPFToturial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPFToturial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

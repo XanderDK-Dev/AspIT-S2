@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="NorthwindUI.View.UserControls.SaveBtn"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NorthwindUI.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="100">
+    <Grid Background="Transparent">
+        <Border Background="#009c05" CornerRadius="4">
+            <Button x:Name="txtInfo" Content="Temp Text" VerticalContentAlignment="Center"
+                 Background="#009c05" Foreground="#dbdbdb" Margin="5" BorderBrush="#009c05"
+                 HorizontalContentAlignment="Center" FontSize="16"/>
+        </Border>
+    </Grid>
+</UserControl>

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:EmployeeList="clr-namespace:NorthwindUI.View.UserControls"
+        xmlns:UserControls="clr-namespace:NorthwindUI.View.UserControls"
         xmlns:local="clr-namespace:NorthwindUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -13,6 +13,18 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <EmployeeList:EmployeeList Margin="15"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <UserControls:EmployeeList Margin="15" Grid.RowSpan="5" x:Name="listEmployees"/>
+
+        <UserControls:InfoShower Grid.Column="1" Grid.Row="1" Margin="10" x:Name="infoFirstName" />
+        <UserControls:InfoShower Grid.Column="2" Grid.Row="1" Margin="10" x:Name="infoLastName"/>
+
+        <UserControls:SaveBtn Grid.Column="2" Grid.Row="4" Margin="55,15,55,15"/>
     </Grid>
 </Window>

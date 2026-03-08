@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using Entities;
+using NorthwindUI.View.UserControls;
+using System.Runtime.ConstrainedExecution;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +22,19 @@ namespace NorthwindUI
         public MainWindow()
         {
             InitializeComponent();
+
+            listEmployees.EmployeeSelected += GetEmployee;
+
+            infoFirstName.SetType("Firstname:");
+            infoLastName.SetType("Lastname:");
         }
+
+        private void GetEmployee(Employee employee)
+        {
+            infoFirstName.SetText(employee.Firstname);
+            infoLastName.SetText(employee.Lastname);
+        }
+
+
     }
 }
