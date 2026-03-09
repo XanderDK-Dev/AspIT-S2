@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\70835\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\70835\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj"
+              "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj"
               }
             }
           }
@@ -357,20 +358,20 @@
         }
       }
     },
-    "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj": {
+    "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\70835\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\70835\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -379,6 +380,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

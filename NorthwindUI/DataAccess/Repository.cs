@@ -32,5 +32,15 @@ namespace DataAccess
             }
             return employees;
         }
+
+        public void UpdateEmployee(Employee employee)
+        {
+            SqlConnection connection = new(connectionString);
+            string sql = $"UPDATE Employees SET FirstName = '{employee.Firstname}', LastName = '{employee.Lastname}' WHERE EmployeeID = {employee.Id};";
+            SqlCommand command = new SqlCommand(sql, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }
