@@ -27,6 +27,9 @@ namespace NorthwindUI
 
             infoFirstName.SetType("Firstname:");
             infoLastName.SetType("Lastname:");
+
+            string firstName = infoFirstName.ToString();
+            string lastName = infoLastName.ToString();
         }
 
         private void GetEmployee(Employee employee)

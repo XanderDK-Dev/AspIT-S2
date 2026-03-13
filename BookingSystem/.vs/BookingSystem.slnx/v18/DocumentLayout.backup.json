@@ -1,0 +1,206 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45E8AD2D-F6CC-99C0-B6AF-489676982DA4}|DataAccess\\DataAccess.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45E8AD2D-F6CC-99C0-B6AF-489676982DA4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FEB7EE-2DF8-0057-ECD5-3035F32686D3}|BookingSystem\\BookingSystem.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FEB7EE-2DF8-0057-ECD5-3035F32686D3}|BookingSystem\\BookingSystem.csproj|solutionrelative:bookingsystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|solutionrelative:bookingapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingapi\\controllers\\bookercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|solutionrelative:bookingapi\\controllers\\bookercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingapi\\controllers\\pitchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|solutionrelative:bookingapi\\controllers\\pitchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\entities\\booker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|solutionrelative:entities\\booker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\entities\\pitches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|solutionrelative:entities\\pitches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FEB7EE-2DF8-0057-ECD5-3035F32686D3}|BookingSystem\\BookingSystem.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{58FEB7EE-2DF8-0057-ECD5-3035F32686D3}|BookingSystem\\BookingSystem.csproj|solutionrelative:bookingsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58FEB7EE-2DF8-0057-ECD5-3035F32686D3}|BookingSystem\\BookingSystem.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingsystem\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58FEB7EE-2DF8-0057-ECD5-3035F32686D3}|BookingSystem\\BookingSystem.csproj|solutionrelative:bookingsystem\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\entities\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95DE3BD9-A587-35A9-17E0-3C34D2A57441}|Entities\\Entities.csproj|solutionrelative:entities\\bookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\bookingsystem\\bookingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8E7F565-0BF8-67C1-2975-C30D93665EE1}|BookingApi\\BookingApi.csproj|solutionrelative:bookingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\DataAccess\\Repository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\DataAccess\\Repository.cs",
+              "RelativeToolTip": "DataAccess\\Repository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAIAwwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T10:07:14.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Booker.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\Entities\\Booker.cs",
+              "RelativeDocumentMoniker": "Entities\\Booker.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\Entities\\Booker.cs",
+              "RelativeToolTip": "Entities\\Booker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T12:55:42.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookerController.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Controllers\\BookerController.cs",
+              "RelativeDocumentMoniker": "BookingApi\\Controllers\\BookerController.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Controllers\\BookerController.cs",
+              "RelativeToolTip": "BookingApi\\Controllers\\BookerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T13:08:58.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingSystem\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BookingSystem\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingSystem\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BookingSystem\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T10:03:40.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingSystem\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "BookingSystem\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingSystem\\MainWindow.xaml",
+              "RelativeToolTip": "BookingSystem\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-11T10:03:41.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "BookingApi\\Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "BookingApi\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwAsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T12:56:26.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PitchesController.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Controllers\\PitchesController.cs",
+              "RelativeDocumentMoniker": "BookingApi\\Controllers\\PitchesController.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Controllers\\PitchesController.cs",
+              "RelativeToolTip": "BookingApi\\Controllers\\PitchesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:43:37.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingSystem\\BookingService.cs",
+              "RelativeDocumentMoniker": "BookingSystem\\BookingService.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingSystem\\BookingService.cs",
+              "RelativeToolTip": "BookingSystem\\BookingService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wDIAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T13:16:19.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pitches.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\Entities\\Pitches.cs",
+              "RelativeDocumentMoniker": "Entities\\Pitches.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\Entities\\Pitches.cs",
+              "RelativeToolTip": "Entities\\Pitches.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T10:42:35.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bookings.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\Entities\\Bookings.cs",
+              "RelativeDocumentMoniker": "Entities\\Bookings.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\Entities\\Bookings.cs",
+              "RelativeToolTip": "Entities\\Bookings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T14:27:08.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Program.cs",
+              "RelativeDocumentMoniker": "BookingApi\\Program.cs",
+              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\BookingSystem\\BookingApi\\Program.cs",
+              "RelativeToolTip": "BookingApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T14:20:34.344Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

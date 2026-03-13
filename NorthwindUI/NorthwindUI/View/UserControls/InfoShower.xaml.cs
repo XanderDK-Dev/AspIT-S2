@@ -32,5 +32,8 @@ namespace NorthwindUI.View.UserControls
         {
             txtInfo.Text = text;
         }
+
+        public string GetText(string text)
+        { return txtInfo.Text; }
     }
 }

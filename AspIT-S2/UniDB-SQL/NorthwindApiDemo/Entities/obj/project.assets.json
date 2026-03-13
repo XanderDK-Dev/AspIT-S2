@@ -8,23 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\70835\\.nuget\\packages\\": {},
+    "C:\\Users\\alexa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\70835\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\obj\\",
+      "projectPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\AspIT-S2\\UniDB-SQL\\NorthwindApiDemo\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\70835\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -73,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

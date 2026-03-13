@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAccess;
+using Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +23,14 @@ namespace NorthwindUI.View.UserControls
         public SaveBtn()
         {
             InitializeComponent();
+        }
+
+        private void txtSave_Click(object sender, RoutedEventArgs e, Employee employee)
+        {
+            Repository repository = new();
+            //TextBox textBox = ()sender;
+            //string firstName = textBox.Text;
+            repository.UpdateEmployee(employee);
         }
     }
 }

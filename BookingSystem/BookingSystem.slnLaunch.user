@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BookingSystem\\BookingSystem.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BookingApi\\BookingApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
