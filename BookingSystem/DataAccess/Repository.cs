@@ -41,8 +41,13 @@ namespace DataAccess
         public void MakeBooking(Bookings bookings)
         {
             SqlConnection connection = new(connectionString);
-            string sql = $"INSERT INTO Bookings (StartDate, EndDate, PitchId, BookerId) VALUES ('{bookings.StartDate}', '{bookings.EndDate}', '{bookings.PitchId}', '{bookings.BookerId}');";
+            //string sql = $"INSERT INTO Bookings (StartDate, EndDate, PitchId, BookerId) VALUES ('{bookings.StartDate}', '{bookings.EndDate}', '{bookings.PitchId}', '{bookings.BookerId}');";
+            string sql = $"INSERT INTO Bookings (StartDate, EndDate, PitchId, BookerId) VALUES (@StartDate, @EndDate, @PitchId, @BookerId);";
             using SqlCommand command = new(sql, connection);
+            command.Parameters.AddWithValue("@StartDate", bookings.StartDate);
+            command.Parameters.AddWithValue("@EndDate", bookings.EndDate);
+            command.Parameters.AddWithValue("@PitchId", bookings.PitchId);
+            command.Parameters.AddWithValue("@BookerId", bookings.BookerId);
             connection.Open();
             command.ExecuteNonQuery();
         }

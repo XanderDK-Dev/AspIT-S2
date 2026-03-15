@@ -27,9 +27,9 @@ namespace BookingSystem
         public event PropertyChangedEventHandler? PropertyChanged;
         public MainWindow()
         {
+            InitializeComponent();
             DataContext = this;
             Pitches = new ObservableCollection<Pitches>();
-            InitializeComponent();
             Loaded += OnLoaded;
         }
         private void OnPropertyChanged(string propertyName)
@@ -123,10 +123,12 @@ namespace BookingSystem
             Booker existingBooker = _allBookers.FirstOrDefault(b => b.Mail == mail);
             Bookings newBooking = new Bookings { StartDate = startdate, EndDate = enddate, BookerId = existingBooker.Id, PitchId = selectedPitch.Id };
             await service.SendBooking(newBooking);
+            OnLoaded(sender, e);
         }
 
         private void lvPitches_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (lvPitches.SelectedItem == null || _allBookings == null) return;
             Pitches pitches = (Pitches)lvPitches.SelectedItem;
             List<Bookings> bookingsFiltered = _allBookings.Where(b => b.PitchId == pitches.Id).ToList();
             Bookings = new ObservableCollection<Bookings>(bookingsFiltered);
