@@ -1,0 +1,5 @@
+C:\Users\alexa\Documents\Dev\AspIT-S2\OOP\InheritanceProgram\obj\Debug\net10.0\InheritanceProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\Documents\Dev\AspIT-S2\OOP\InheritanceProgram\obj\Debug\net10.0\InheritanceProgram.AssemblyInfoInputs.cache
+C:\Users\alexa\Documents\Dev\AspIT-S2\OOP\InheritanceProgram\obj\Debug\net10.0\InheritanceProgram.AssemblyInfo.cs
+C:\Users\alexa\Documents\Dev\AspIT-S2\OOP\InheritanceProgram\obj\Debug\net10.0\InheritanceProgram.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\Dev\AspIT-S2\OOP\InheritanceProgram\obj\Debug\net10.0\InheritanceProgram.sourcelink.json
