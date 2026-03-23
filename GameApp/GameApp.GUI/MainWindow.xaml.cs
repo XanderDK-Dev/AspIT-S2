@@ -22,21 +22,21 @@ namespace GameApp.GUI
         }
 
         // MADE WITH AI!!
-        private const double BaseWidth = 1000.0;
-        private const double BaseHeight = 600.0;
-
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            double scaleX = e.NewSize.Width / BaseWidth;
-            double scaleY = e.NewSize.Height / BaseHeight;
-
-            // Use the smaller to keep aspect ratio (nothing gets stretched)
-            double scale = Math.Min(scaleX, scaleY);
-
-            // Only scale UP, never down (clipping handles the small case)
-            scale = Math.Max(1.0, scale);
-
-            MainContent.LayoutTransform = new ScaleTransform(scale, scale);
-        }
+        //private const double BaseWidth = 1000.0;
+        //private const double BaseHeight = 600.0;
+        //
+        //private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        //{
+        //    double scaleX = e.NewSize.Width / BaseWidth;
+        //    double scaleY = e.NewSize.Height / BaseHeight;
+        //
+        //    // Use the smaller to keep aspect ratio (nothing gets stretched)
+        //    double scale = Math.Min(scaleX, scaleY);
+        //
+        //    // Only scale UP, never down (clipping handles the small case)
+        //    scale = Math.Max(1.0, scale);
+        //
+        //    MainContent.LayoutTransform = new ScaleTransform(scale, scale);
+        //}
     }
 }

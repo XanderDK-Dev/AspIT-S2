@@ -10,7 +10,10 @@
 
   <ItemGroup>
     <None Remove="Images\2k5rHFB7scp6VLqu8UZLa9.jpg" />
+    <None Remove="Images\54612971880_604d134477_o.png" />
+    <None Remove="Images\ds2_sxsw2025_screenshots009.jpg" />
     <None Remove="Images\header.jpg" />
+    <None Remove="Images\maxresdefault.jpg" />
     <None Remove="Images\PEGI_18.svg.png" />
   </ItemGroup>
 
@@ -20,7 +23,10 @@
 
   <ItemGroup>
     <Resource Include="Images\2k5rHFB7scp6VLqu8UZLa9.jpg" />
+    <Resource Include="Images\54612971880_604d134477_o.png" />
+    <Resource Include="Images\ds2_sxsw2025_screenshots009.jpg" />
     <Resource Include="Images\header.jpg" />
+    <Resource Include="Images\maxresdefault.jpg" />
     <Resource Include="Images\PEGI_18.svg.png" />
   </ItemGroup>
 

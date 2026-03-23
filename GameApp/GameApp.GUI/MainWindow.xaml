@@ -4,10 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameApp.GUI"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        SizeChanged="Window_SizeChanged"
-        MinWidth="900" MinHeight="450">
+        mc:Ignorable="d" Height="450" Width="800"
+        MinWidth="900" MinHeight="372">
+        <!--SizeChanged="Window_SizeChanged"-->
 
     <Grid Background="#111213">
         <Grid.ColumnDefinitions>
@@ -15,25 +14,27 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="DEATH STRANDING 2: ON THE BEACH" Grid.Column="1" FontSize="32" FontWeight="SemiBold" Foreground="White"/>
-
         <ListView Grid.Column="0" Grid.Row="1"/>
 
-        <Grid x:Name="MainContent" Grid.Column="1" Grid.Row="1" MinWidth="700" MinHeight="370" MaxWidth="830" MaxHeight="434" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Grid x:Name="MainContent" Grid.Column="1" MinWidth="700" MinHeight="300" MaxWidth="830" MaxHeight="600" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="11"/>
                 <ColumnDefinition Width="272"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="320"/>
+                <RowDefinition Height="250"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Image Source="/Images/2k5rHFB7scp6VLqu8UZLa9.jpg" Stretch="Uniform" VerticalAlignment="Top"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Grid.Row="1">
+                <Image Source="/Images/54612971880_604d134477_o.png" MaxWidth="100" MaxHeight="100" Margin="0,0,5,0" Stretch="Uniform"/>
+                <Image Source="/Images/ds2_sxsw2025_screenshots009.jpg" MaxWidth="100" MaxHeight="100" Margin="0,0,5,0" Stretch="Uniform"/>
+                <Image Source="/Images/maxresdefault.jpg" MaxWidth="100" MaxHeight="100" Margin="0,0,5,0" Stretch="Uniform"/>
+            </StackPanel>
 
 
             <Grid Grid.Row="0" Grid.Column="2">
@@ -41,8 +42,7 @@
                     <RowDefinition Height="11*"/>
                     <RowDefinition Height="10*"/>
                     <RowDefinition Height="2*"/>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="4*"/>
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
@@ -51,20 +51,20 @@
                 </Grid.ColumnDefinitions>
 
                 <Image Source="/Images/header.jpg" Stretch="Uniform" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                <TextBlock Text="Sam – with companions by his side – sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected?" Grid.Column="0" Grid.Row="1" Width="272" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="#E2E3E4"/>
+                <TextBlock FontSize="12" Text="Sam – with companions by his side – sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected?" Grid.Column="0" Grid.Row="1" Width="272" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="#E2E3E4"/>
                 <TextBlock Text="Release Date:" Grid.Row="2" Foreground="#7E8188"/>
                 <TextBlock Text="19 Mar, 2026" Grid.Row="2" Grid.Column="1" Foreground="#7E8188"/>
 
                 <TextBlock Text="Developer:" Grid.Row="3" Foreground="#7E8188"/>
                 <TextBlock Text="KOJIMA PRODUCTIONS" Grid.Row="3" Grid.Column="1" Foreground="#7E8188"/>
 
-                <TextBlock Text="Publisher:" Grid.Row="4" Foreground="#7E8188"/>
-                <TextBlock Text="PlayStation Publishing LLC" Grid.Row="4" Grid.Column="1" Foreground="#7E8188"/>
+                <TextBlock Text="Publisher:" Grid.Row="3" Foreground="#7E8188" Margin="0,20,0,0"/>
+                <TextBlock Text="PlayStation Publishing LLC" Grid.Row="3" Grid.Column="1" Foreground="#7E8188" Margin="0,20,0,0"/>
             </Grid>
 
-            <Border Grid.Column="0" Grid.Row="1" Background="#2B2C2F">
+            <!-- <Border Grid.Column="0" Grid.Row="1" Background="#2B2C2F">
                     <TextBlock Text="Pre-Purchase DEATH STRANDING 2: ON THE BEACH" FontSize="16" FontWeight="SemiBold" Foreground="WhiteSmoke"/>
-            </Border>
+            </Border> -->
 
             <Grid Grid.Column="2" Grid.Row="1" Background="#2B2C2F" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
