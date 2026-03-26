@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|solutionrelative:gameapp.gui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\gameapp\\gameapp.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|solutionrelative:gameapp.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\gameapp\\gameapp.gui\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|solutionrelative:gameapp.gui\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\gameapp\\gameapp.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C68F8C44-63CE-A9F6-E9CD-A2460447F37D}|GameApp.GUI\\GameApp.GUI.csproj|solutionrelative:gameapp.gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DatabaseHandler.cs",
               "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\GameApp\\GameApp.GUI\\DatabaseHandler.cs",
               "RelativeDocumentMoniker": "GameApp.GUI\\DatabaseHandler.cs",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\GameApp\\GameApp.GUI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GameApp.GUI\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\GameApp\\GameApp.GUI\\MainWindow.xaml.cs",
               "RelativeToolTip": "GameApp.GUI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAtwCcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAWwDMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T08:53:23.71Z",
               "EditorCaption": ""

@@ -29,11 +29,26 @@
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Image Source="/Images/2k5rHFB7scp6VLqu8UZLa9.jpg" Stretch="Uniform" VerticalAlignment="Top"/>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Grid.Row="1">
-                <Image Source="/Images/54612971880_604d134477_o.png" MaxWidth="100" MaxHeight="100" Margin="0,0,5,0" Stretch="Uniform"/>
-                <Image Source="/Images/ds2_sxsw2025_screenshots009.jpg" MaxWidth="100" MaxHeight="100" Margin="0,0,5,0" Stretch="Uniform"/>
-                <Image Source="/Images/maxresdefault.jpg" MaxWidth="100" MaxHeight="100" Margin="0,0,5,0" Stretch="Uniform"/>
+            <Image Name="imgMain" Source="/Images/2k5rHFB7scp6VLqu8UZLa9.jpg" Stretch="Uniform" VerticalAlignment="Top"/>
+            <StackPanel ScrollViewer.HorizontalScrollBarVisibility="Auto" Name="ImageSelection" Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1">
+                <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img1_Click">
+                    <Image Name="img1" Source="/Images/54612971880_604d134477_o.png" Stretch="Uniform"/>
+                </Button>
+                <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img2_Click">
+                    <Image Name="img2" Source="/Images/ds2_sxsw2025_screenshots009.jpg" Stretch="Uniform"/>
+                </Button>
+                <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img3_Click">
+                    <Image Name="img3" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                </Button>
+                <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img4_Click">
+                    <Image Name="img4" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                </Button>
+                <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img5_Click">
+                    <Image Name="img5" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                </Button>
+                <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img6_Click">
+                    <Image Name="img6" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                </Button>
             </StackPanel>
 
 

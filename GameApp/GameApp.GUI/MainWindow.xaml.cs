@@ -21,6 +21,39 @@ namespace GameApp.GUI
             InitializeComponent();
         }
 
+        private void img_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"", UriKind.Absolute));
+        }
+
+        private void Img1_Click(object sender, RoutedEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"{img1.Source}", UriKind.Absolute));
+        }
+
+        private void Img2_Click(object sender, RoutedEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"{img2.Source}", UriKind.Absolute));
+        }
+        private void Img3_Click(object sender, RoutedEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"{img3.Source}", UriKind.Absolute));
+        }
+        private void Img4_Click(object sender, RoutedEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"{img4.Source}", UriKind.Absolute));
+        }
+        private void Img5_Click(object sender, RoutedEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"{img5.Source}", UriKind.Absolute));
+        }
+        private void Img6_Click(object sender, RoutedEventArgs e)
+        {
+            imgMain.Source = new BitmapImage(new Uri(@$"{img6.Source}", UriKind.Absolute));
+        }
+
+
+
         // MADE WITH AI!!
         //private const double BaseWidth = 1000.0;
         //private const double BaseHeight = 600.0;
