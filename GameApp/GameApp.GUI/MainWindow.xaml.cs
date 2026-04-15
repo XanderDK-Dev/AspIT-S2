@@ -1,6 +1,8 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -19,7 +21,32 @@ namespace GameApp.GUI
         public MainWindow()
         {
             InitializeComponent();
+
+            DatabaseHandler databaseHandler = new();
+            List<Game> games = databaseHandler.GetGames();
+            foreach (var game in games)
+            {
+                listGames.Items.Add(game);
+                gameDescription.Text = game.Description;
+            }
         }
+
+        private void listGames_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Game selected = null;
+            if (listGames.SelectedItem != null)
+            {
+                selected = (Game)listGames.SelectedItem;
+                gameDescription.Text = selected.Description;
+                int len = selected.MainImg.Length;
+                byte[] thumbnailImage = new byte[len];
+                for(int i = 0; i < len; i++)
+                    thumbnailImage[i] = (byte)i;
+
+                Image thumbnail = Game.ConvertToImage(thumbnailImage);
+            }
+        }
+        
 
         private void img_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -51,6 +78,7 @@ namespace GameApp.GUI
         {
             imgMain.Source = new BitmapImage(new Uri(@$"{img6.Source}", UriKind.Absolute));
         }
+
 
 
 

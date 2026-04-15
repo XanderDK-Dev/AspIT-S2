@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\",
+  "WorkspaceRootPath": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\employeelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\employeelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\employeelist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C48BAA2-78E6-49E2-B7BF-A3D8652D2B10}|Entities\\Entities.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C48BAA2-78E6-49E2-B7BF-A3D8652D2B10}|Entities\\Entities.csproj|solutionrelative:entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\savebtn.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\savebtn.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\savebtn.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\savebtn.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\savebtn.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\savebtn.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61861995-CFC9-44BA-BB58-2FD05E3059B4}|DataAccess\\DataAccess.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61861995-CFC9-44BA-BB58-2FD05E3059B4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\infoshower.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\infoshower.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\infoshower.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\infoshower.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\infoshower.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\alexa\\documents\\dev\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\employeelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2C48BAA2-78E6-49E2-B7BF-A3D8652D2B10}|Entities\\Entities.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C48BAA2-78E6-49E2-B7BF-A3D8652D2B10}|Entities\\Entities.csproj|solutionrelative:entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\infoshower.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\infoshower.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\employeelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\employeelist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61861995-CFC9-44BA-BB58-2FD05E3059B4}|DataAccess\\DataAccess.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61861995-CFC9-44BA-BB58-2FD05E3059B4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|c:\\users\\70835\\onedrive - campus vejle\\dokumenter\\aspit-s2\\northwindui\\northwindui\\view\\usercontrols\\savebtn.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00471EE-2025-36F4-5048-3F17533915FE}|NorthwindUI\\NorthwindUI.csproj|solutionrelative:northwindui\\view\\usercontrols\\savebtn.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,28 +50,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InfoShower.xaml",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml",
-              "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\InfoShower.xaml",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml",
-              "RelativeToolTip": "NorthwindUI\\View\\UserControls\\InfoShower.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-07T20:10:50.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "NorthwindUI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml.cs",
               "RelativeToolTip": "NorthwindUI\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T08:09:03.688Z",
               "EditorCaption": ""
@@ -80,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SaveBtn.xaml",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml",
               "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\SaveBtn.xaml",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml",
               "RelativeToolTip": "NorthwindUI\\View\\UserControls\\SaveBtn.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-03-09T08:34:56.439Z",
@@ -92,22 +81,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EmployeeList.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml.cs",
               "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\EmployeeList.xaml.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml.cs",
               "RelativeToolTip": "NorthwindUI\\View\\UserControls\\EmployeeList.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-07T19:30:13.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "SaveBtn.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml.cs",
               "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\SaveBtn.xaml.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\SaveBtn.xaml.cs",
               "RelativeToolTip": "NorthwindUI\\View\\UserControls\\SaveBtn.xaml.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAuwCAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,62 +104,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "EmployeeList.xaml",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml",
               "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\EmployeeList.xaml",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\EmployeeList.xaml",
               "RelativeToolTip": "NorthwindUI\\View\\UserControls\\EmployeeList.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-05T08:19:45.9Z"
+              "WhenOpened": "2026-03-05T08:19:45.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\DataAccess\\Repository.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\DataAccess\\Repository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Repository.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\DataAccess\\Repository.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\DataAccess\\Repository.cs",
               "RelativeToolTip": "DataAccess\\Repository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCUAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T13:45:46.475Z"
+              "WhenOpened": "2026-03-07T13:45:46.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "InfoShower.xaml",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml",
+              "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\InfoShower.xaml",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml",
+              "RelativeToolTip": "NorthwindUI\\View\\UserControls\\InfoShower.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-07T20:10:50.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\Entities\\Employee.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "Entities\\Employee.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\Entities\\Employee.cs",
               "RelativeToolTip": "Entities\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-09T08:19:22.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "InfoShower.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml.cs",
               "RelativeDocumentMoniker": "NorthwindUI\\View\\UserControls\\InfoShower.xaml.cs",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml.cs",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\View\\UserControls\\InfoShower.xaml.cs",
               "RelativeToolTip": "NorthwindUI\\View\\UserControls\\InfoShower.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAEwCQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAEwCQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T20:37:42.465Z"
+              "WhenOpened": "2026-03-07T20:37:42.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "NorthwindUI\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\alexa\\Documents\\Dev\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\70835\\OneDrive - Campus Vejle\\Dokumenter\\AspIT-S2\\NorthwindUI\\NorthwindUI\\MainWindow.xaml",
               "RelativeToolTip": "NorthwindUI\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-05T08:09:06.266Z"
+              "WhenOpened": "2026-03-05T08:09:06.266Z",
+              "EditorCaption": ""
             }
           ]
         }

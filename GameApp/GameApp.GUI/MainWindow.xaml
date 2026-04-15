@@ -17,7 +17,7 @@
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
 
-        <ListView Grid.Column="0" Grid.Row="1"/>
+        <ListView Grid.Column="0" Grid.Row="1" x:Name="listGames" SelectionChanged="listGames_SelectionChanged"/>
 
         <Grid x:Name="MainContent" Grid.Column="1" MinWidth="700" MinHeight="300" MaxWidth="1100" MaxHeight="700" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Grid.ColumnDefinitions>
@@ -65,8 +65,8 @@
                     <ColumnDefinition Width="1.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <Image Source="/Images/header.jpg" Stretch="Uniform" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                <TextBlock FontSize="12" HorizontalAlignment="Left" TextAlignment="Left" Text="Sam – with companions by his side – sets out on a new journey to save humanity from extinction. Join them as they traverse a world beset by otherworldly enemies, obstacles and a haunting question: should we have connected?" Grid.Column="0" Grid.Row="1" Width="272" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="#E2E3E4"/>
+                <Image x:Name="thumbnail" Source="/Images/header.jpg" Stretch="Uniform" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="gameDescription" FontSize="12" HorizontalAlignment="Left" TextAlignment="Left" Grid.Column="0" Grid.Row="1" Width="272" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="#E2E3E4"/>
                 <TextBlock Text="Release Date:" TextAlignment="Left" Grid.Row="2" Foreground="#7E8188"/>
                 <TextBlock Text="19 Mar, 2026" TextAlignment="Left" Grid.Row="2" Grid.Column="1" Foreground="#7E8188"/>
 

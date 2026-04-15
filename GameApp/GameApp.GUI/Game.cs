@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Linq;
-using System.IO;
-using System.Data;
-using System.Drawing;
-using System.Data.SqlClient;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Media.Imaging;
 
 namespace GameApp.GUI
 {
-    class Game
+    public class Game
     {
         public int Id {  get; set; }
         public string Name { get; set; } = string.Empty;
@@ -37,20 +38,38 @@ namespace GameApp.GUI
         public string img5 {  get; set; } = string.Empty;
         public string img6name {  get; set; } = string.Empty;
         public string img6 {  get; set; } = string.Empty;
-        // Source - https://stackoverflow.com/a/8280457
-        // Posted by Sasha
-        // Retrieved 2026-04-13, License - CC BY-SA 3.0
-
-        public static Image ConvertToImage(Stream stream)
+        public override string ToString()
         {
-            try
-            {
-                return Image.FromStream(stream);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Abe");
-            }
+            return $"{Name}";
+        }
+        public static Image ConvertToImage(byte[] arr)
+        {
+            var image = new Image();
+
+            /* 
+            Convert the image (Windows.Controls) Not (Windows.Drawing or System.Drawing or what it's called)
+            Load that into image.Source, and wow you got an image, you then return that image, and use it.
+            Just like you used that nugget of yours to read this amazing paice of text. right...
+            Good luck :D *SEAL.png*
+
+            Use google, and stackoverflow. Trust me, you are gonna get good at converting images... cause it will not be the last time you are going -
+            to need it, cause WPF is shit. Just like you, jk.. ahhahahah.
+
+            Now go do code, go be a code-monkey.
+
+                          __
+             w  c(..)o   (
+              \__(-)    __)
+                  /\   (
+                 /(_)___)
+                 w /|
+                  | \
+        ejm97    m  m
+
+
+                - Nick, that person that idk kinda coool :D, yes just "Trust me"
+
+            */
         }
 
     }

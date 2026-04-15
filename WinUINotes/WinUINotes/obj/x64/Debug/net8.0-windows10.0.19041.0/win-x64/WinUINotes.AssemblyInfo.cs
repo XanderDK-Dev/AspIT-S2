@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinUINotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+532916dab9d9e7b8d37803b65eb72804a60663a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a72645945cd0ef5d00789e845ecc51905af3bb9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinUINotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinUINotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
