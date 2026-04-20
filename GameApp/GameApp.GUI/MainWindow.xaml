@@ -68,13 +68,13 @@
                 <Image x:Name="thumbnail" Source="/Images/header.jpg" Stretch="Uniform" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
                 <TextBlock x:Name="gameDescription" FontSize="12" HorizontalAlignment="Left" TextAlignment="Left" Grid.Column="0" Grid.Row="1" Width="272" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="#E2E3E4"/>
                 <TextBlock Text="Release Date:" TextAlignment="Left" Grid.Row="2" Foreground="#7E8188"/>
-                <TextBlock Text="19 Mar, 2026" TextAlignment="Left" Grid.Row="2" Grid.Column="1" Foreground="#7E8188"/>
+                <TextBlock x:Name="releasedate" TextAlignment="Left" Grid.Row="2" Grid.Column="1" Foreground="#7E8188"/>
 
                 <TextBlock Text="Developer:" TextAlignment="Left" Grid.Row="3" Foreground="#7E8188"/>
-                <TextBlock Text="KOJIMA PRODUCTIONS" TextAlignment="Left" Grid.Row="3" Grid.Column="1" Foreground="#7E8188"/>
+                <TextBlock x:Name="developer" TextAlignment="Left" Grid.Row="3" Grid.Column="1" Foreground="#7E8188"/>
 
                 <TextBlock Text="Publisher:" TextAlignment="Left" Grid.Row="3" Foreground="#7E8188" Margin="0,20,0,0"/>
-                <TextBlock Text="PlayStation Publishing LLC" TextAlignment="Left" Grid.Row="3" Grid.Column="1" Foreground="#7E8188" Margin="0,20,0,0"/>
+                <TextBlock x:Name="publisher" TextAlignment="Left" Grid.Row="3" Grid.Column="1" Foreground="#7E8188" Margin="0,20,0,0"/>
             </Grid>
 
             <!-- <Border Grid.Column="0" Grid.Row="1" Background="#2B2C2F">
@@ -88,8 +88,9 @@
                 </Grid.ColumnDefinitions>
 
                 <Image Source="/Images/PEGI_18.svg.png" Stretch="Uniform" HorizontalAlignment="Left" Margin="4,4,0,4" VerticalAlignment="Center"/>
-                <TextBlock Text="Violence" Foreground="#CECFD2" Grid.Column="1" Margin="5,0,0,0"/>
-                <TextBlock Text="Bad Language" Foreground="#CECFD2" Grid.Column="1" Margin="5,15,0,0"/>
+                <TextBlock x:Name="agereason1" Foreground="#CECFD2" Grid.Column="1" Margin="5,0,0,0"/>
+                <TextBlock x:Name="agereason2" Foreground="#CECFD2" Grid.Column="1" Margin="5,15,0,0"/>
+                <TextBlock x:Name="agereason3" Foreground="#CECFD2" Grid.Column="1" Margin="5,30,0,0"/>
             </Grid>
         </Grid>
     </Grid>

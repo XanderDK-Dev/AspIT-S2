@@ -28,6 +28,12 @@ namespace GameApp.GUI
             {
                 listGames.Items.Add(game);
                 gameDescription.Text = game.Description;
+                releasedate.Text = game.ReleaseDate.Date.ToString("MM/dd/yyyy");
+                developer.Text = game.Developer;
+                publisher.Text = game.Publisher;
+                agereason1.Text = game.AgeReason1;
+                agereason2.Text = game.AgeReason2;
+                agereason3.Text = game.AgeReason3;
             }
         }
 
@@ -38,6 +44,12 @@ namespace GameApp.GUI
             {
                 selected = (Game)listGames.SelectedItem;
                 gameDescription.Text = selected.Description;
+                releasedate.Text = selected.ReleaseDate.Date.ToString("MM/dd/yyyy");
+                developer.Text= selected.Developer;
+                publisher.Text = selected.Publisher;
+                agereason1.Text = selected.AgeReason1;
+                agereason2.Text = selected.AgeReason2;
+                agereason3.Text = selected.AgeReason3;
                 int len = selected.MainImg.Length;
                 byte[] thumbnailImage = new byte[len];
                 for(int i = 0; i < len; i++)

@@ -17,7 +17,7 @@ namespace GameApp.GUI
         public int Id {  get; set; }
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public DateOnly ReleaseDate { get; set; }
+        public DateTime ReleaseDate { get; set; }
         public string Developer { get; set; } = string.Empty;
         public string Publisher {  get; set; } = string.Empty;
         public int AgeRating { get; set; }
@@ -45,6 +45,7 @@ namespace GameApp.GUI
         public static Image ConvertToImage(byte[] arr)
         {
             var image = new Image();
+            
 
             /* 
             Convert the image (Windows.Controls) Not (Windows.Drawing or System.Drawing or what it's called)
@@ -70,6 +71,7 @@ namespace GameApp.GUI
                 - Nick, that person that idk kinda coool :D, yes just "Trust me"
 
             */
+            return image ;
         }
 
     }
