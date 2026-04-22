@@ -87,7 +87,7 @@
                     <ColumnDefinition Width="5.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <Image Source="/Images/PEGI_18.svg.png" Stretch="Uniform" HorizontalAlignment="Left" Margin="4,4,0,4" VerticalAlignment="Center"/>
+                <Image x:Name="ageratingimg"  Stretch="Uniform" HorizontalAlignment="Left" Margin="4,4,0,4" VerticalAlignment="Center"/>
                 <TextBlock x:Name="agereason1" Foreground="#CECFD2" Grid.Column="1" Margin="5,0,0,0"/>
                 <TextBlock x:Name="agereason2" Foreground="#CECFD2" Grid.Column="1" Margin="5,15,0,0"/>
                 <TextBlock x:Name="agereason3" Foreground="#CECFD2" Grid.Column="1" Margin="5,30,0,0"/>

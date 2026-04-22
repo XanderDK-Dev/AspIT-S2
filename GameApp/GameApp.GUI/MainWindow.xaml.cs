@@ -34,6 +34,31 @@ namespace GameApp.GUI
                 agereason1.Text = game.AgeReason1;
                 agereason2.Text = game.AgeReason2;
                 agereason3.Text = game.AgeReason3;
+                if (game.AgeRating == 18)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_18.svg.png", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (game.AgeRating == 16)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/age-16-black.jpg", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (game.AgeRating == 12)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_12.svg.png", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (game.AgeRating == 7)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("Images/age-7-black.jpg", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (game.AgeRating == 3)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_3.svg.png", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
             }
         }
 
@@ -50,6 +75,31 @@ namespace GameApp.GUI
                 agereason1.Text = selected.AgeReason1;
                 agereason2.Text = selected.AgeReason2;
                 agereason3.Text = selected.AgeReason3;
+                if (selected.AgeRating == 18)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_18.svg.png", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (selected.AgeRating == 16)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/age-16-black.jpg", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (selected.AgeRating == 12)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/age-12-black.jpg", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (selected.AgeRating == 7)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/age-7-black.jpg", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
+                else if (selected.AgeRating == 3)
+                {
+                    BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_3.svg.png", UriKind.Relative));
+                    ageratingimg.Source = image;
+                }
                 int len = selected.MainImg.Length;
                 byte[] thumbnailImage = new byte[len];
                 for(int i = 0; i < len; i++)

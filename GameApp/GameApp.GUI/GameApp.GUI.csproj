@@ -15,6 +15,7 @@
     <None Remove="Images\header.jpg" />
     <None Remove="Images\maxresdefault.jpg" />
     <None Remove="Images\PEGI_18.svg.png" />
+    <None Remove="Images\PEGI_3.svg.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
     <Resource Include="Images\header.jpg" />
     <Resource Include="Images\maxresdefault.jpg" />
     <Resource Include="Images\PEGI_18.svg.png" />
+    <Resource Include="Images\PEGI_3.svg.png" />
   </ItemGroup>
 
 </Project>
