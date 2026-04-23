@@ -12,7 +12,7 @@ class DatabaseHandler
     {
         List<Game> games = new();
         using SqlConnection connection = new(connectionString);
-        string sql = "SELECT Name, Description, [Release Date], Developer, Publisher, [Age Rating], [Age reason1], [Age reason2], [Age reason3] FROM GameInfo;";
+        string sql = "SELECT Name, Description, [Release Date], Developer, Publisher, [Age Rating], [Age reason1], [Age reason2], [Age reason3], [Main Img], Img1, Img2, Img3, Img4, Img5, Img6 FROM GameInfo;";
         SqlCommand command = new SqlCommand(sql, connection);
         connection.Open();
         using SqlDataReader reader = command.ExecuteReader();
@@ -28,6 +28,17 @@ class DatabaseHandler
             string agereason1 = reader["Age reason1"] as string;
             string agereason2 = reader["Age reason2"] as string;
             string agereason3 = reader["Age reason3"] as string;
+            // Read the varbinary(MAX) as a byte array
+            byte[] mainImgBytes = reader["Main Img"] as byte[];
+            byte[] Img1Bytes = reader["Img1"] as byte[];
+            byte[] Img2Bytes = reader["Img2"] as byte[];
+            byte[] Img3Bytes = reader["Img3"] as byte[];
+            byte[] Img4Bytes = reader["Img4"] as byte[];
+            byte[] Img5Bytes = reader["Img5"] as byte[];
+            byte[] Img6Bytes = reader["Img6"] as byte[];
+
+            // Convert it to a hex string for your Game object, checking for nulls 
+            string mainimg = mainImgBytes != null ? Convert.ToHexString(mainImgBytes) : "";
             game = new()
             {
                 Name = name,
@@ -38,7 +49,14 @@ class DatabaseHandler
                 AgeRating = agerating,
                 AgeReason1 = agereason1,
                 AgeReason2 = agereason2,
-                AgeReason3 = agereason3
+                AgeReason3 = agereason3,
+                MainImg = mainimg,
+                img1 = Img1Bytes != null ? Convert.ToHexString(Img1Bytes) : "",
+                img2 = Img2Bytes != null ? Convert.ToHexString(Img2Bytes) : "",
+                img3 = Img3Bytes != null ? Convert.ToHexString(Img3Bytes) : "",
+                img4 = Img4Bytes != null ? Convert.ToHexString(Img4Bytes) : "",
+                img5 = Img5Bytes != null ? Convert.ToHexString(Img5Bytes) : "",
+                img6 = Img6Bytes != null ? Convert.ToHexString(Img6Bytes) : "",
             };
 
             games.Add(game);

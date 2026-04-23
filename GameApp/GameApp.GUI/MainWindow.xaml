@@ -17,7 +17,7 @@
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
 
-        <ListView Grid.Column="0" Grid.Row="1" x:Name="listGames" SelectionChanged="listGames_SelectionChanged"/>
+        <ListView Foreground="#CECFD2" Background="#2B2C2F" Grid.Column="0" Grid.Row="1" x:Name="listGames" SelectionChanged="listGames_SelectionChanged"/>
 
         <Grid x:Name="MainContent" Grid.Column="1" MinWidth="700" MinHeight="300" MaxWidth="1100" MaxHeight="700" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Grid.ColumnDefinitions>
@@ -29,27 +29,28 @@
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Image Name="imgMain" Source="/Images/2k5rHFB7scp6VLqu8UZLa9.jpg" Stretch="Uniform" VerticalAlignment="Top"/>
-            <StackPanel ScrollViewer.HorizontalScrollBarVisibility="Auto" Name="ImageSelection" Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1">
+            <Image Name="imgMain" Stretch="Uniform" VerticalAlignment="Top"/>
+            <ListView x:Name="ImageSelection" VerticalAlignment="Top" Grid.Row="1" SelectionChanged="ImageSelection_SelectionChanged"/>
+            <!--<StackPanel ScrollViewer.HorizontalScrollBarVisibility="Auto" Name="ImageSelection" Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1">
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img1_Click">
-                    <Image Name="img1" Source="/Images/54612971880_604d134477_o.png" Stretch="Uniform"/>
+                    <Image x:Name="img1" Stretch="Uniform"/>
                 </Button>
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img2_Click">
-                    <Image Name="img2" Source="/Images/ds2_sxsw2025_screenshots009.jpg" Stretch="Uniform"/>
+                    <Image x:Name="img2" Stretch="Uniform"/>
                 </Button>
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img3_Click">
-                    <Image Name="img3" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                    <Image x:Name="img3" Stretch="Uniform"/>
                 </Button>
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img4_Click">
-                    <Image Name="img4" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                    <Image x:Name="img4" Stretch="Uniform"/>
                 </Button>
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img5_Click">
-                    <Image Name="img5" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                    <Image x:Name="img5" Stretch="Uniform"/>
                 </Button>
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img6_Click">
-                    <Image Name="img6" Source="/Images/maxresdefault.jpg" Stretch="Uniform"/>
+                    <Image x:Name="img6" Stretch="Uniform"/>
                 </Button>
-            </StackPanel>
+            </StackPanel>-->
 
 
             <Grid Grid.Row="0" Grid.Column="2">
@@ -65,7 +66,7 @@
                     <ColumnDefinition Width="1.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <Image x:Name="thumbnail" Source="/Images/header.jpg" Stretch="Uniform" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                <Image x:Name="thumbnail" Stretch="Uniform" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
                 <TextBlock x:Name="gameDescription" FontSize="12" HorizontalAlignment="Left" TextAlignment="Left" Grid.Column="0" Grid.Row="1" Width="272" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Foreground="#E2E3E4"/>
                 <TextBlock Text="Release Date:" TextAlignment="Left" Grid.Row="2" Foreground="#7E8188"/>
                 <TextBlock x:Name="releasedate" TextAlignment="Left" Grid.Row="2" Grid.Column="1" Foreground="#7E8188"/>
