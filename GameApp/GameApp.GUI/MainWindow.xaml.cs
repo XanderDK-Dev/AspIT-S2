@@ -38,18 +38,18 @@ namespace GameApp.GUI
                 thumbnail.Source = LoadImage(imageData);
                 byte[] image1Data = HexToBytes(game.img1);
                 img1.Source = LoadImage(image1Data);
-                ImageSelection.Items.Add(image1Data);
-                //byte[] image2Data = HexToBytes(game.img2);
-                //img2.Source = LoadImage(image2Data);
-                //byte[] image3Data = HexToBytes(game.img3);
-                //img3.Source = LoadImage(image3Data);
-                //byte[] image4Data = HexToBytes(game.img4);
-                //img4.Source = LoadImage(image4Data);
-                //byte[] image5Data = HexToBytes(game.img5);
-                //img5.Source = LoadImage(image5Data);
-                //byte[] image6Data = HexToBytes(game.img6);
-                //img6.Source = LoadImage(image6Data);
-                //imgMain.Source = img1.Source;
+                //ImageSelection.Items.Add(image1Data);
+                byte[] image2Data = HexToBytes(game.img2);
+                img2.Source = LoadImage(image2Data);
+                byte[] image3Data = HexToBytes(game.img3);
+                img3.Source = LoadImage(image3Data);
+                byte[] image4Data = HexToBytes(game.img4);
+                img4.Source = LoadImage(image4Data);
+                byte[] image5Data = HexToBytes(game.img5);
+                img5.Source = LoadImage(image5Data);
+                byte[] image6Data = HexToBytes(game.img6);
+                img6.Source = LoadImage(image6Data);
+                imgMain.Source = img1.Source;
                 if (game.AgeRating == 18)
                 {
                     BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_18.svg.png", UriKind.Relative));
@@ -98,21 +98,21 @@ namespace GameApp.GUI
                 agereason1.Text = selected.AgeReason1;
                 agereason2.Text = selected.AgeReason2;
                 agereason3.Text = selected.AgeReason3;
-                //byte[] imageData = HexToBytes(selected.MainImg);
-                //thumbnail.Source = LoadImage(imageData);
-                //byte[] image1Data = HexToBytes(selected.img1);
-                //img1.Source = LoadImage(image1Data);
-                //byte[] image2Data = HexToBytes(selected.img2);
-                //img2.Source = LoadImage(image2Data);
-                //byte[] image3Data = HexToBytes(selected.img3);
-                //img3.Source = LoadImage(image3Data);
-                //byte[] image4Data = HexToBytes(selected.img4);
-                //img4.Source = LoadImage(image4Data);
-                //byte[] image5Data = HexToBytes(selected.img5);
-                //img5.Source = LoadImage(image5Data);
-                //byte[] image6Data = HexToBytes(selected.img6);
-                //img6.Source = LoadImage(image6Data);
-                //imgMain.Source = img1.Source;  
+                byte[] imageData = HexToBytes(selected.MainImg);
+                thumbnail.Source = LoadImage(imageData);
+                byte[] image1Data = HexToBytes(selected.img1);
+                img1.Source = LoadImage(image1Data);
+                byte[] image2Data = HexToBytes(selected.img2);
+                img2.Source = LoadImage(image2Data);
+                byte[] image3Data = HexToBytes(selected.img3);
+                img3.Source = LoadImage(image3Data);
+                byte[] image4Data = HexToBytes(selected.img4);
+                img4.Source = LoadImage(image4Data);
+                byte[] image5Data = HexToBytes(selected.img5);
+                img5.Source = LoadImage(image5Data);
+                byte[] image6Data = HexToBytes(selected.img6);
+                img6.Source = LoadImage(image6Data);
+                imgMain.Source = img1.Source;  
                 if (selected.AgeRating == 18)
                 {
                     BitmapImage image = new BitmapImage(new Uri("/Images/PEGI_18.svg.png", UriKind.Relative));
@@ -150,7 +150,12 @@ namespace GameApp.GUI
         }
         private void ImageSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            Image selected = null;
+            if (ImageSelection.SelectedItem != null)
+            {
+                selected = (Image)ImageSelection.SelectedItem;
+                imgMain.Source = selected.Source;
+            }
         }
         // 2. Convert Byte Array to BitmapImage for WPF
         public BitmapImage LoadImage(byte[] imageData)

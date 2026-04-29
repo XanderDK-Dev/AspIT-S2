@@ -14,12 +14,13 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="9*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ListView Foreground="#CECFD2" Background="#2B2C2F" Grid.Column="0" Grid.Row="1" x:Name="listGames" SelectionChanged="listGames_SelectionChanged"/>
+        <ListView Foreground="#CECFD2" Background="#2B2C2F" Grid.Column="0" Grid.RowSpan="2" x:Name="listGames" SelectionChanged="listGames_SelectionChanged"/>
 
-        <Grid x:Name="MainContent" Grid.Column="1" MinWidth="700" MinHeight="300" MaxWidth="1100" MaxHeight="700" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Grid x:Name="MainContent" Grid.Column="1" MaxWidth="1100" MaxHeight="700" VerticalAlignment="Top" HorizontalAlignment="Left" ><!--MinWidth="700" MinHeight="300"-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1.5*"/>
                 <ColumnDefinition Width="11"/>
@@ -30,7 +31,23 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Image Name="imgMain" Stretch="Uniform" VerticalAlignment="Top"/>
-            <ListView x:Name="ImageSelection" VerticalAlignment="Top" Grid.Row="1" SelectionChanged="ImageSelection_SelectionChanged"/>
+            <ListView Cursor="Hand" x:Name="ImageSelection" VerticalAlignment="Top" Background="#2B2C2F" Grid.Row="1" SelectionChanged="ImageSelection_SelectionChanged">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type Image}">
+                        <Image x:Name="img1" Stretch="Uniform" Width="110"/>
+                        <Image x:Name="img2" Stretch="Uniform" Width="110"/>
+                        <Image x:Name="img3" Stretch="Uniform" Width="110"/>
+                        <Image x:Name="img4" Stretch="Uniform" Width="110"/>
+                        <Image x:Name="img5" Stretch="Uniform" Width="110"/>
+                        <Image x:Name="img6" Stretch="Uniform" Width="110"/>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
             <!--<StackPanel ScrollViewer.HorizontalScrollBarVisibility="Auto" Name="ImageSelection" Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1">
                 <Button MaxWidth="110" MaxHeight="110" Margin="0,0,5,0" Cursor="Hand" Click="Img1_Click">
                     <Image x:Name="img1" Stretch="Uniform"/>
@@ -93,6 +110,10 @@
                 <TextBlock x:Name="agereason2" Foreground="#CECFD2" Grid.Column="1" Margin="5,15,0,0"/>
                 <TextBlock x:Name="agereason3" Foreground="#CECFD2" Grid.Column="1" Margin="5,30,0,0"/>
             </Grid>
+
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" Background="#2B2C2F">
+            <TextBlock Text="Developer:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4"/>
         </Grid>
     </Grid>
 </Window>
