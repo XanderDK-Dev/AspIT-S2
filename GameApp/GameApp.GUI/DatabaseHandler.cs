@@ -13,13 +13,14 @@ class DatabaseHandler
     {
         List<Game> games = new();
         using SqlConnection connection = new(connectionString);
-        string sql = "SELECT Name, Description, [Release Date], Developer, Publisher, [Age Rating], [Age reason1], [Age reason2], [Age reason3], [Main Img], Img1, Img2, Img3, Img4, Img5, Img6 FROM GameInfo;";
+        string sql = "SELECT ID, Name, Description, [Release Date], Developer, Publisher, [Age Rating], [Age reason1], [Age reason2], [Age reason3], [Main Img], Img1, Img2, Img3, Img4, Img5, Img6 FROM GameInfo;";
         SqlCommand command = new SqlCommand(sql, connection);
         connection.Open();
         using SqlDataReader reader = command.ExecuteReader();
         Game game = new();
         while (reader.Read())
         {
+            int id = (int)reader["ID"];
             string name = reader["Name"] as string;
             string description = reader["Description"] as string;
             DateTime releasedate = (DateTime)reader["Release Date"];
@@ -42,6 +43,7 @@ class DatabaseHandler
             string mainimg = mainImgBytes != null ? Convert.ToHexString(mainImgBytes) : "";
             game = new()
             {
+                Id = id,
                 Name = name,
                 Description = description,
                 ReleaseDate = releasedate,
@@ -67,28 +69,81 @@ class DatabaseHandler
 
     public void MakeGame(Game games)
     {
-        SqlConnection connection = new(connectionString);
-        //VERIFY @ LOCATIONS
-        string sql = $"INSERT INTO GameInfo (Name, Description, [Release Date], Developer, Publisher, [Age Rating], [Age reason1], [Age reason2], [Age reason3], [Main Img], Img1, Img2, Img3, Img4, Img5, Img6) VALUES (@Name, @Description, [@Release Date], @Developer, @Publisher, [@Age Rating], [@Age reason1], [@Age reason2], [@Age reason3], [@Main Img], @Img1, @Img2, @Img3, @Img4, @Img5, @Img6);";
+        using SqlConnection connection = new(connectionString);
+        string sql = "INSERT INTO GameInfo ([Name], [Description], [Release Date], [Publisher], [Developer], [Age Rating], [Age reason1], [Age reason2], [Age reason3], [Main Img], [Img1], [img2], [img3], [img4], [img5], [img6]) VALUES (@Name, @Description, @ReleaseDate, @Publisher, @Developer, @AgeRating, @AgeReason1, @AgeReason2, @AgeReason3, @MainImg, @Img1, @Img2, @Img3, @Img4, @Img5, @Img6)";
         using SqlCommand command = new(sql, connection);
-        command.Parameters.AddWithValue("@Name", games.Name);
-        command.Parameters.AddWithValue("@Description", games.Description);
-        command.Parameters.AddWithValue("@Release Date", games.ReleaseDate);
-        command.Parameters.AddWithValue("@Publisher", games.Publisher);
-        command.Parameters.AddWithValue("@Developer", games.Developer);
-        command.Parameters.AddWithValue("@Age Rating", games.AgeRating);
-        command.Parameters.AddWithValue("@Age reason1", games.AgeReason1);
-        command.Parameters.AddWithValue("@Age reason2", games.AgeReason2);
-        command.Parameters.AddWithValue("@Age reason3", games.AgeReason3);
-        command.Parameters.AddWithValue("@Main Img", games.MainImg);
-        command.Parameters.AddWithValue("@Img1", games.img1);
-        command.Parameters.AddWithValue("@Img2", games.img2);
-        command.Parameters.AddWithValue("@Img3", games.img3);
-        command.Parameters.AddWithValue("@Img4", games.img4);
-        command.Parameters.AddWithValue("@Img5", games.img5);
-        command.Parameters.AddWithValue("@Img6", games.img6);
+        
+        command.Parameters.AddWithValue("@Name", games.Name ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@Description", games.Description ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@ReleaseDate", games.ReleaseDate);
+        command.Parameters.AddWithValue("@Publisher", games.Publisher ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@Developer", games.Developer ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@AgeRating", games.AgeRating);
+        command.Parameters.AddWithValue("@AgeReason1", games.AgeReason1 ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@AgeReason2", games.AgeReason2 ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@AgeReason3", games.AgeReason3 ?? (object)DBNull.Value);
+
+        // Convert the hex string from your `Game` object to an actual byte array for SQL
+        command.Parameters.Add(new SqlParameter("@MainImg", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.MainImg) });
+        command.Parameters.Add(new SqlParameter("@Img1", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img1) });
+        command.Parameters.Add(new SqlParameter("@Img2", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img2) });
+        command.Parameters.Add(new SqlParameter("@Img3", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img3) });
+        command.Parameters.Add(new SqlParameter("@Img4", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img4) });
+        command.Parameters.Add(new SqlParameter("@Img5", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img5) });
+        command.Parameters.Add(new SqlParameter("@Img6", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img6) });
+
         connection.Open();
         command.ExecuteNonQuery();
+    }
+
+    public void UpdateGame(Game games)
+    {
+        using SqlConnection connection = new(connectionString);
+        string sql = "UPDATE GameInfo SET [Name] = @Name, [Description] = @Description, [Release Date] = @ReleaseDate, [Publisher] = @Publisher, [Developer] = @Developer, [Age Rating] = @AgeRating, [Age reason1] = @Agereason1, [Age reason2] = @Agereason2, [Age reason3] = @Agereason3, [Main Img] = COALESCE(@MainImg, [Main Img]), [Img1] = COALESCE(@Img1, [Img1]), [img2] = COALESCE(@Img2, [img2]), [img3] = COALESCE(@Img3, [img3]), [img4] = COALESCE(@Img4, [img4]), [img5] = COALESCE(@Img5, [img5]), [img6] = COALESCE(@Img6, [img6]) WHERE ID = @ID";
+        using SqlCommand command = new(sql, connection);
+
+        command.Parameters.AddWithValue("@Name", games.Name ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@Description", games.Description ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@ReleaseDate", games.ReleaseDate);
+        command.Parameters.AddWithValue("@Publisher", games.Publisher ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@Developer", games.Developer ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@AgeRating", games.AgeRating);
+        command.Parameters.AddWithValue("@AgeReason1", games.AgeReason1 ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@AgeReason2", games.AgeReason2 ?? (object)DBNull.Value);
+        command.Parameters.AddWithValue("@AgeReason3", games.AgeReason3 ?? (object)DBNull.Value);
+
+        // Convert the hex string from your `Game` object to an actual byte array for SQL
+        command.Parameters.Add(new SqlParameter("@MainImg", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.MainImg) });
+        command.Parameters.Add(new SqlParameter("@Img1", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img1) });
+        command.Parameters.Add(new SqlParameter("@Img2", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img2) });
+        command.Parameters.Add(new SqlParameter("@Img3", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img3) });
+        command.Parameters.Add(new SqlParameter("@Img4", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img4) });
+        command.Parameters.Add(new SqlParameter("@Img5", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img5) });
+        command.Parameters.Add(new SqlParameter("@Img6", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img6) });
+
+        command.Parameters.AddWithValue("@ID", games.Id);
+
+        connection.Open();
+        command.ExecuteNonQuery();
+    }
+
+    // Helper method to convert your Hex strings into database-ready varbinary arrays
+    private object GetBytesFromHex(string hexString)
+    {
+        if (string.IsNullOrWhiteSpace(hexString))
+        {
+            return DBNull.Value;
+        }
+
+        try
+        {
+            return Convert.FromHexString(hexString);
+        }
+        catch
+        {
+            // Fallback in case of a bad hex string
+            return DBNull.Value;
+        }
     }
 }
 

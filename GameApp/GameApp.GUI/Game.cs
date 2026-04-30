@@ -40,7 +40,7 @@ namespace GameApp.GUI
         public string img6 {  get; set; } = string.Empty;
         public override string ToString()
         {
-            return $"{Name}";
+            return $"ID:{Id} - {Name}";
         }
         /* 
     public static Image ConvertToImage(byte[] arr)

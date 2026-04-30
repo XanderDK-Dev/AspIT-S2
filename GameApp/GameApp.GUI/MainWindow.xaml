@@ -113,7 +113,61 @@
 
         </Grid>
         <Grid Grid.Row="1" Grid.Column="1" Background="#2B2C2F">
-            <TextBlock Text="Developer:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="editImg1" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,4,0,4" Width="250" Grid.Column="1"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Img1_Click" Content="Image 1" Grid.Column="1"/>
+            <TextBlock x:Name="editFilename1" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
+            <Image x:Name="editImg2" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,4,0,4" Width="250" Grid.Column="1"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Img2_Click" Margin="360,4,0,4" Content="Image 2" Grid.Column="1"/>
+            <TextBlock x:Name="editFilename2" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
+            <Image x:Name="editImg3" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,200,0,4" Width="250" Grid.Column="1"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Img3_Click" Margin="0,200,0,4" Content="Image 3" Grid.Column="1"/>
+            <TextBlock x:Name="editFilename3" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
+            <Image x:Name="editImg4" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,200,0,4" Width="250" Grid.Column="1"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Img4_Click" Margin="360,200,0,4" Content="Image 4" Grid.Column="1"/>
+            <TextBlock x:Name="editFilename4" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+    
+            <Image x:Name="editImg5" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,400,0,4" Width="250" Grid.Column="1"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Img5_Click" Margin="0,400,0,4" Content="Image 5" Grid.Column="1"/>
+            <TextBlock x:Name="editFilename5" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
+            <Image x:Name="editImg6" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,400,0,4" Width="250" Grid.Column="1"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Img6_Click" Margin="360,400,0,4" Content="Image 6" Grid.Column="1"/>
+            <TextBlock x:Name="editFilename6" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+
+
+            <Image x:Name="editThumbnail" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,4,0,4" Width="240"/>
+            <Button Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Click="thumbnail_Click" Content="Thumbnail"/>
+            <TextBlock Text="Name:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="5,143,0,0"/>
+            <TextBox x:Name="editName" Text="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="100,140,0,0" Width="125" Height="25"/>
+            <TextBlock x:Name="editFilename" Width="250" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0"/>
+            <TextBlock Text="Description:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="5,164,0,0"/>
+            <TextBox x:Name="editDesc" Text="Description" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="5,180,0,0" Width="325" Height="75"/>
+            <TextBlock Text="Release Date:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="5,265,0,0"/>
+            <DatePicker x:Name="editDate" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="100,263,0,0" Width="125" Height="25"/>
+            <TextBlock Text="Developer:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="5,300,0,0"/>
+            <TextBox x:Name="editDev" Text="Developer" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="100,295,0,0" Width="125" Height="25"/>
+            <TextBlock Text="Publisher:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="5,330,0,0"/>
+            <TextBox x:Name="editPub" Text="Publisher" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="100,325,0,0" Width="125" Height="25"/>
+            <TextBlock Text="Age Rating:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="235,265,0,0"/>
+            <TextBox x:Name="editAge" Text="1" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="300,265,0,0" Width="20" Height="20"/>
+            <TextBlock Text="Age Reason 1:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="235,285,0,0"/>
+            <TextBox x:Name="editAgeReason1" Text="Bad Reason" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="315,285,0,0" Width="125" Height="20"/>
+            <TextBlock Text="Age Reason 2:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="235,310,0,0"/>
+            <TextBox x:Name="editAgeReason2" Text="Bad Reason" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="315,310,0,0" Width="125" Height="20"/>
+            <TextBlock Text="Age Reason 3:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" Margin="235,335,0,0"/>
+            <TextBox x:Name="editAgeReason3" Text="Bad Reason" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" Margin="315,335,0,0" Width="125" Height="20"/>
+            <Button Width="150" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,50" Content="Make New Game" Click="NewGame_Click"/>
+            <Button Width="150" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,50" Content="Update Current Game" Click="UpdateGame_Click"/>
+            <TextBox x:Name="editId" Text="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="3" Margin="80,0,0,80" Width="20" Height="20"/>
+            <TextBlock Text="ID of Game to Update:" TextAlignment="Left" Grid.Row="3" Foreground="#E2E3E4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="80,0,0,100"/>
+
         </Grid>
     </Grid>
 </Window>
