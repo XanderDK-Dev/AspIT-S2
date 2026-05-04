@@ -77,38 +77,38 @@ namespace GameApp.GUI
 
         // AI
         // 1. Convert Hex String to Byte Array
-        public byte[] HexToBytes(string hex)
-        {
-            // Remove 0x if present
-            if (hex.StartsWith("0x")) hex = hex.Substring(2);
+        //public byte[] HexToBytes(string hex)
+        //{
+        //    // Remove 0x if present
+        //    if (hex.StartsWith("0x")) hex = hex.Substring(2);
 
-            int length = hex.Length;
-            byte[] bytes = new byte[length / 2];
-            for (int i = 0; i < length; i += 2)
-            {
-                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
-            }
-            return bytes;
-        }
+        //    int length = hex.Length;
+        //    byte[] bytes = new byte[length / 2];
+        //    for (int i = 0; i < length; i += 2)
+        //    {
+        //        bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
+        //    }
+        //    return bytes;
+        //}
 
-        // 2. Convert Byte Array to BitmapImage for WPF
-        public BitmapImage LoadImage(byte[] imageData)
-        {
-            if (imageData == null || imageData.Length == 0) return null;
+        //// 2. Convert Byte Array to BitmapImage for WPF
+        //public BitmapImage LoadImage(byte[] imageData)
+        //{
+        //    if (imageData == null || imageData.Length == 0) return null;
 
-            var image = new BitmapImage();
-            using (var mem = new MemoryStream(imageData))
-            {
-                mem.Position = 0;
-                image.BeginInit();
-                image.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
-                image.CacheOption = BitmapCacheOption.OnLoad; // Important for MemoryStreams
-                image.StreamSource = mem;
-                image.EndInit();
-            }
-            image.Freeze(); // Makes it thread-safe and improves performance
-            return image;
-        }
+        //    var image = new BitmapImage();
+        //    using (var mem = new MemoryStream(imageData))
+        //    {
+        //        mem.Position = 0;
+        //        image.BeginInit();
+        //        image.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
+        //        image.CacheOption = BitmapCacheOption.OnLoad; // Important for MemoryStreams
+        //        image.StreamSource = mem;
+        //        image.EndInit();
+        //    }
+        //    image.Freeze(); // Makes it thread-safe and improves performance
+        //    return image;
+        //}
 
     }
 }
