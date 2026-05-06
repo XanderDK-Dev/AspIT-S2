@@ -94,12 +94,14 @@ class DatabaseHandler
 
         connection.Open();
         command.ExecuteNonQuery();
+        command.Parameters.Clear();
     }
 
     public void UpdateGame(Game games)
     {
         using SqlConnection connection = new(connectionString);
-        string sql = "UPDATE GameInfo SET [Name] = @Name, [Description] = @Description, [Release Date] = @ReleaseDate, [Publisher] = @Publisher, [Developer] = @Developer, [Age Rating] = @AgeRating, [Age reason1] = @Agereason1, [Age reason2] = @Agereason2, [Age reason3] = @Agereason3, [Main Img] = COALESCE(@MainImg, [Main Img]), [Img1] = COALESCE(@Img1, [Img1]), [img2] = COALESCE(@Img2, [img2]), [img3] = COALESCE(@Img3, [img3]), [img4] = COALESCE(@Img4, [img4]), [img5] = COALESCE(@Img5, [img5]), [img6] = COALESCE(@Img6, [img6]) WHERE ID = @ID";
+        // Removed COALESCE so when you pass DBNull.Value, it actually overwrites with NULL
+        string sql = "UPDATE GameInfo SET [Name] = @Name, [Description] = @Description, [Release Date] = @ReleaseDate, [Publisher] = @Publisher, [Developer] = @Developer, [Age Rating] = @AgeRating, [Age reason1] = @Agereason1, [Age reason2] = @Agereason2, [Age reason3] = @Agereason3, [Main Img] = @MainImg, [Img1] = @Img1, [img2] = @Img2, [img3] = @Img3, [img4] = @Img4, [img5] = @Img5, [img6] = @Img6 WHERE ID = @ID";
         using SqlCommand command = new(sql, connection);
 
         command.Parameters.AddWithValue("@Name", games.Name ?? (object)DBNull.Value);
@@ -112,7 +114,6 @@ class DatabaseHandler
         command.Parameters.AddWithValue("@AgeReason2", games.AgeReason2 ?? (object)DBNull.Value);
         command.Parameters.AddWithValue("@AgeReason3", games.AgeReason3 ?? (object)DBNull.Value);
 
-        // Convert the hex string from your `Game` object to an actual byte array for SQL
         command.Parameters.Add(new SqlParameter("@MainImg", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.MainImg) });
         command.Parameters.Add(new SqlParameter("@Img1", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img1) });
         command.Parameters.Add(new SqlParameter("@Img2", System.Data.SqlDbType.VarBinary, -1) { Value = GetBytesFromHex(games.img2) });
@@ -125,6 +126,7 @@ class DatabaseHandler
 
         connection.Open();
         command.ExecuteNonQuery();
+        command.Parameters.Clear();
     }
 
     // Helper method to convert your Hex strings into database-ready varbinary arrays

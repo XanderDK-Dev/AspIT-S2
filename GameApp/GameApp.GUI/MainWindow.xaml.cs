@@ -114,6 +114,15 @@ namespace GameApp.GUI
             if (listGames.SelectedItem != null)
             {
                 selected = (Game)listGames.SelectedItem;
+
+                editFilename.Text = string.Empty;
+                editFilename1.Text = string.Empty;
+                editFilename2.Text = string.Empty;
+                editFilename3.Text = string.Empty;
+                editFilename4.Text = string.Empty;
+                editFilename5.Text = string.Empty;
+                editFilename6.Text = string.Empty;
+
                 editId.Text = selected.Id.ToString();
                 editName.Text = selected.Name;
                 gameDescription.Text = selected.Description;
